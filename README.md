@@ -19,7 +19,7 @@ Make sure you have access to this private repo (SSH key or a token with `repo`
 scope), then:
 
 ```swift
-.package(url: "https://github.com/kaVish2214/RouteKit-Distribution.git", from: "1.0.0")
+.package(url: "https://github.com/kaVish2214/RouteKit-Distribution.git", from: "0.1.0")
 ```
 
 ```swift
