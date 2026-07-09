@@ -1,0 +1,103 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios14.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 6 -O -enable-experimental-feature DebugDescriptionMacro -module-name RouteBinary -package-name routebinarybuild
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import AuthSessionInterface
+import DependencyResolver
+import Foundation
+import RouteInterface
+import Swift
+import SwiftConcurrency
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_Concurrency.MainActor final public class RouteHandle : ObjectiveC.NSObject, RouteInterface.RouteHandleProtocol {
+  @_Concurrency.MainActor weak final public let windowScene: UIKit.UIWindowScene?
+  @_Concurrency.MainActor final public let authSessionHandle: any AuthSessionInterface.AuthSessionHandleProtocol
+  @_Concurrency.MainActor weak final public let applicationState: (any RouteInterface.UIApplicationStateProtocol)?
+  @_Concurrency.MainActor final public var isRouteInitialized: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var currentViewController: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor final public let sceneIntentController: any RouteInterface.SceneIntentControllerProtocol
+  @_Concurrency.MainActor required public init(_ configuration: any RouteInterface.RouteHandleConfigurable, authenticationSessionHandle: (any AuthSessionInterface.AuthSessionHandleProtocol)?, router: any RouteInterface.RouterProtocol)
+  @objc deinit
+  @discardableResult
+  @_Concurrency.MainActor final public func push(to viewController: any RouteInterface.RoutingViewControlling, animated: Swift.Bool) -> Swift.Bool
+  @discardableResult
+  @_Concurrency.MainActor final public func push(to viewController: UIKit.UIViewController, animated: Swift.Bool) -> Swift.Bool
+  @discardableResult
+  @_Concurrency.MainActor final public func pop(animated: Swift.Bool) -> UIKit.UIViewController?
+  @_Concurrency.MainActor final public func present(_ viewController: UIKit.UIViewController, with presentationSource: any RouteInterface.PresentationSourceProtocol, animated flag: Swift.Bool, completion: (() -> Swift.Void)?)
+  @_Concurrency.MainActor final public func route(to sceneIntent: RouteInterface.SceneIntent, completion: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor final public func executePendingSceneIntents(completion: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor final public func requestStoreState()
+  @_Concurrency.MainActor final public func requestDiscardState()
+}
+@_Concurrency.MainActor public struct RouteHandleConfiguration : @preconcurrency RouteInterface.RouteHandleConfigurable {
+  @_Concurrency.MainActor public let windowScene: UIKit.UIWindowScene
+  @_Concurrency.MainActor public let applicationState: any RouteInterface.UIApplicationStateProtocol
+  @_Concurrency.MainActor public let sceneIntentController: any RouteInterface.SceneIntentControllerProtocol
+  @_Concurrency.MainActor public let stateRestoration: any RouteInterface.RouteStateRestoration
+  @_Concurrency.MainActor public init(windowScene: UIKit.UIWindowScene, applicationState: any RouteInterface.UIApplicationStateProtocol, sceneIntentController: any RouteInterface.SceneIntentControllerProtocol, stateRestoration: any RouteInterface.RouteStateRestoration)
+  @_Concurrency.MainActor public var hashValue: Swift.Int {
+    get
+  }
+}
+extension RouteBinary.SceneManager {
+  @_Concurrency.MainActor final public func requestSceneActivation(_ scene: SceneConfigurator.SceneObject, errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor final public func requestSceneDestruction(_ scene: SceneConfigurator.SceneObject, executionHandler: @escaping ([UIKit.UIScene]) -> RouteInterface.UISceneExecutionPolicy, errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor final public func requestSceneDestruction(_ uiScene: UIKit.UIScene, errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor final public func requestSceneIntentActivation(_ sceneIntent: RouteInterface.SceneIntent, currentScene: UIKit.UIScene, errorHandler: @escaping (any Swift.Error) -> Swift.Void) throws
+  @_Concurrency.MainActor final public func scene(_ scene: UIKit.UIScene, openURLContexts URLContexts: Swift.Set<UIKit.UIOpenURLContext>, errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor final public func scene(_ scene: UIKit.UIScene, continue userActivity: Foundation.NSUserActivity, errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+  @_Concurrency.MainActor final public func scene(_ scene: UIKit.UIScene, performActionFor shortcutItem: UIKit.UIApplicationShortcutItem, completionHandler: @escaping (Swift.Bool) -> Swift.Void, errorHandler: @escaping (any Swift.Error) -> Swift.Void)
+}
+@_Concurrency.MainActor final public class SceneManager<SceneConfigurator> : RouteInterface.SceneHandleProtocol where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol {
+  @_Concurrency.MainActor final public var isApplicationBeingLaunched: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public let sceneConfigurator: SceneConfigurator
+  @_Concurrency.MainActor final public let registeredScenes: Swift.Set<SceneConfigurator.SceneObject>
+  @_Concurrency.MainActor final public let registeredIntents: Swift.Set<RouteInterface.SceneIntent>
+  @_Concurrency.MainActor final public var preferredWindowBehavior: RouteInterface.WindowBehavior {
+    get
+  }
+  @_Concurrency.MainActor final public var connectedScenes: Swift.Set<SceneConfigurator.SceneObject> {
+    get
+  }
+  @_Concurrency.MainActor public init(sceneConfigurator: SceneConfigurator)
+  @discardableResult
+  @_Concurrency.MainActor final public func scene(_ scene: UIKit.UIWindowScene, willConnectTo session: UIKit.UISceneSession, options connectionOptions: UIKit.UIScene.ConnectionOptions, errorHandler: @escaping (any Swift.Error) -> Swift.Void) throws -> (any RouteInterface.RouteHandleProtocol)?
+  @_Concurrency.MainActor final public func scene(for uiScene: UIKit.UIScene?) -> SceneConfigurator.SceneObject?
+  @_Concurrency.MainActor final public func uiScene(for scene: SceneConfigurator.SceneObject?) -> UIKit.UIScene?
+  @_Concurrency.MainActor final public func uiScenes(for scene: SceneConfigurator.SceneObject?) -> [UIKit.UIScene]
+  @_Concurrency.MainActor final public func routeHandle(for scene: UIKit.UIScene?) -> (any RouteInterface.RouteHandleProtocol)?
+  @_Concurrency.MainActor final public func discardSceneSessions(for sessions: Swift.Set<UIKit.UISceneSession>)
+  @objc deinit
+}
+public enum SceneTerminationRequestType : Swift.Sendable {
+  case system
+  case authenticationSession
+  public static func == (a: RouteBinary.SceneTerminationRequestType, b: RouteBinary.SceneTerminationRequestType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension RouteBinary.SceneTerminationRequestType : RouteInterface.SceneTerminationRequest {
+  public var isSystemRequest: Swift.Bool {
+    get
+  }
+  public var isAuthSessionTermination: Swift.Bool {
+    get
+  }
+}
+extension RouteBinary.RouteHandle : Swift.Sendable {}
+extension RouteBinary.SceneManager : Swift.Sendable {}
+extension RouteBinary.RouteHandleConfiguration : Swift.Sendable {}
+extension RouteBinary.SceneTerminationRequestType : Swift.Equatable {}
+extension RouteBinary.SceneTerminationRequestType : Swift.Hashable {}

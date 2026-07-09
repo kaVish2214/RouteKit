@@ -1,0 +1,3893 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "RouteBinary",
+    "printedName": "RouteBinary",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthSessionInterface",
+        "printedName": "AuthSessionInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthSessionInterface",
+        "printedName": "AuthSessionInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthSessionInterface",
+        "printedName": "AuthSessionInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftConcurrency",
+        "printedName": "SwiftConcurrency",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthSessionInterface",
+        "printedName": "AuthSessionInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftConcurrency",
+        "printedName": "SwiftConcurrency",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthSessionInterface",
+        "printedName": "AuthSessionInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "DependencyResolver",
+        "printedName": "DependencyResolver",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RouteHandle",
+        "printedName": "RouteHandle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "windowScene",
+            "printedName": "windowScene",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "UIKit.UIWindowScene?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A6HandleC11windowSceneSo08UIWindowE0CSgvp",
+            "mangledName": "$s11RouteBinary0A6HandleC11windowSceneSo08UIWindowE0CSgvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIWindowScene?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIWindowScene",
+                        "printedName": "UIKit.UIWindowScene",
+                        "usr": "c:objc(cs)UIWindowScene"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A6HandleC11windowSceneSo08UIWindowE0CSgvg",
+                "mangledName": "$s11RouteBinary0A6HandleC11windowSceneSo08UIWindowE0CSgvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authSessionHandle",
+            "printedName": "authSessionHandle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AuthSessionHandleProtocol",
+                "printedName": "any AuthSessionInterface.AuthSessionHandleProtocol",
+                "usr": "s:20AuthSessionInterface0aB14HandleProtocolP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A6HandleC011authSessionC004AuthE9Interface0feC8Protocol_pvp",
+            "mangledName": "$s11RouteBinary0A6HandleC011authSessionC004AuthE9Interface0feC8Protocol_pvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthSessionHandleProtocol",
+                    "printedName": "any AuthSessionInterface.AuthSessionHandleProtocol",
+                    "usr": "s:20AuthSessionInterface0aB14HandleProtocolP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A6HandleC011authSessionC004AuthE9Interface0feC8Protocol_pvg",
+                "mangledName": "$s11RouteBinary0A6HandleC011authSessionC004AuthE9Interface0feC8Protocol_pvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applicationState",
+            "printedName": "applicationState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any RouteInterface.UIApplicationStateProtocol)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A6HandleC16applicationState0A9Interface013UIApplicationE8Protocol_pSgvp",
+            "mangledName": "$s11RouteBinary0A6HandleC16applicationState0A9Interface013UIApplicationE8Protocol_pSgvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any RouteInterface.UIApplicationStateProtocol)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIApplicationStateProtocol",
+                        "printedName": "any RouteInterface.UIApplicationStateProtocol",
+                        "usr": "s:14RouteInterface26UIApplicationStateProtocolP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A6HandleC16applicationState0A9Interface013UIApplicationE8Protocol_pSgvg",
+                "mangledName": "$s11RouteBinary0A6HandleC16applicationState0A9Interface013UIApplicationE8Protocol_pSgvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRouteInitialized",
+            "printedName": "isRouteInitialized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A6HandleC02isA11InitializedSbvp",
+            "mangledName": "$s11RouteBinary0A6HandleC02isA11InitializedSbvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A6HandleC02isA11InitializedSbvg",
+                "mangledName": "$s11RouteBinary0A6HandleC02isA11InitializedSbvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentViewController",
+            "printedName": "currentViewController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A6HandleC21currentViewControllerSo06UIViewF0CSgvp",
+            "mangledName": "$s11RouteBinary0A6HandleC21currentViewControllerSo06UIViewF0CSgvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIViewController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIViewController",
+                        "printedName": "UIKit.UIViewController",
+                        "usr": "c:objc(cs)UIViewController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A6HandleC21currentViewControllerSo06UIViewF0CSgvg",
+                "mangledName": "$s11RouteBinary0A6HandleC21currentViewControllerSo06UIViewF0CSgvg",
+                "moduleName": "RouteBinary",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sceneIntentController",
+            "printedName": "sceneIntentController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SceneIntentControllerProtocol",
+                "printedName": "any RouteInterface.SceneIntentControllerProtocol",
+                "usr": "s:14RouteInterface29SceneIntentControllerProtocolP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A6HandleC21sceneIntentController0A9Interface05SceneeF8Protocol_pvp",
+            "mangledName": "$s11RouteBinary0A6HandleC21sceneIntentController0A9Interface05SceneeF8Protocol_pvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SceneIntentControllerProtocol",
+                    "printedName": "any RouteInterface.SceneIntentControllerProtocol",
+                    "usr": "s:14RouteInterface29SceneIntentControllerProtocolP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A6HandleC21sceneIntentController0A9Interface05SceneeF8Protocol_pvg",
+                "mangledName": "$s11RouteBinary0A6HandleC21sceneIntentController0A9Interface05SceneeF8Protocol_pvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:authenticationSessionHandle:router:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RouteHandle",
+                "printedName": "RouteBinary.RouteHandle",
+                "usr": "c:@M@RouteBinary@objc(cs)RouteHandle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RouteHandleConfigurable",
+                "printedName": "any RouteInterface.RouteHandleConfigurable",
+                "usr": "s:14RouteInterface0A18HandleConfigurableP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AuthSessionInterface.AuthSessionHandleProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AuthSessionHandleProtocol",
+                    "printedName": "any AuthSessionInterface.AuthSessionHandleProtocol",
+                    "usr": "s:20AuthSessionInterface0aB14HandleProtocolP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RouterProtocol",
+                "printedName": "any RouteInterface.RouterProtocol",
+                "usr": "s:14RouteInterface14RouterProtocolP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11RouteBinary0A6HandleC_021authenticationSessionC06routerAC0A9Interface0aC12Configurable_p_04AutheG00ieC8Protocol_pSgAF06RouterJ0_ptcfc",
+            "mangledName": "$s11RouteBinary0A6HandleC_021authenticationSessionC06routerAC0A9Interface0aC12Configurable_p_04AutheG00ieC8Protocol_pSgAF06RouterJ0_ptcfc",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Required",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(to:animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RoutingViewControlling",
+                "printedName": "any RouteInterface.RoutingViewControlling",
+                "usr": "s:14RouteInterface22RoutingViewControllingP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC4push2to8animatedSb0A9Interface22RoutingViewControlling_p_SbtF",
+            "mangledName": "$s11RouteBinary0A6HandleC4push2to8animatedSb0A9Interface22RoutingViewControlling_p_SbtF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(to:animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC4push2to8animatedSbSo16UIViewControllerC_SbtF",
+            "mangledName": "$s11RouteBinary0A6HandleC4push2to8animatedSbSo16UIViewControllerC_SbtF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pop",
+            "printedName": "pop(animated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC3pop8animatedSo16UIViewControllerCSgSb_tF",
+            "mangledName": "$s11RouteBinary0A6HandleC3pop8animatedSo16UIViewControllerCSgSb_tF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "present",
+            "printedName": "present(_:with:animated:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PresentationSourceProtocol",
+                "printedName": "any RouteInterface.PresentationSourceProtocol",
+                "usr": "s:14RouteInterface26PresentationSourceProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC7present_4with8animated10completionySo16UIViewControllerC_0A9Interface26PresentationSourceProtocol_pSbyycSgtF",
+            "mangledName": "$s11RouteBinary0A6HandleC7present_4with8animated10completionySo16UIViewControllerC_0A9Interface26PresentationSourceProtocol_pSbyycSgtF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "route",
+            "printedName": "route(to:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SceneIntent",
+                "printedName": "RouteInterface.SceneIntent",
+                "usr": "s:14RouteInterface11SceneIntentO"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC5route2to10completiony0A9Interface11SceneIntentO_ys5Error_pctF",
+            "mangledName": "$s11RouteBinary0A6HandleC5route2to10completiony0A9Interface11SceneIntentO_ys5Error_pctF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "executePendingSceneIntents",
+            "printedName": "executePendingSceneIntents(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC26executePendingSceneIntents10completionyys5Error_pc_tF",
+            "mangledName": "$s11RouteBinary0A6HandleC26executePendingSceneIntents10completionyys5Error_pc_tF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestStoreState",
+            "printedName": "requestStoreState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC17requestStoreStateyyF",
+            "mangledName": "$s11RouteBinary0A6HandleC17requestStoreStateyyF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestDiscardState",
+            "printedName": "requestDiscardState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary0A6HandleC19requestDiscardStateyyF",
+            "mangledName": "$s11RouteBinary0A6HandleC19requestDiscardStateyyF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RouteHandle",
+                "printedName": "RouteBinary.RouteHandle",
+                "usr": "c:@M@RouteBinary@objc(cs)RouteHandle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RouteBinary@objc(cs)RouteHandle(im)init",
+            "mangledName": "$s11RouteBinary0A6HandleCACycfc",
+            "moduleName": "RouteBinary",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RouteBinary@objc(cs)RouteHandle",
+        "mangledName": "$s11RouteBinary0A6HandleC",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "Custom",
+          "Final",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DependencyResolver",
+            "printedName": "DependencyResolver",
+            "usr": "s:18DependencyResolverAAP",
+            "mangledName": "$s18DependencyResolverAAP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "StateRestorable",
+            "printedName": "StateRestorable",
+            "usr": "s:14RouteInterface15StateRestorableP",
+            "mangledName": "$s14RouteInterface15StateRestorableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RouteHandleProtocol",
+            "printedName": "RouteHandleProtocol",
+            "usr": "s:14RouteInterface0A14HandleProtocolP",
+            "mangledName": "$s14RouteInterface0A14HandleProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RouteHandleConfiguration",
+        "printedName": "RouteHandleConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "windowScene",
+            "printedName": "windowScene",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindowScene",
+                "printedName": "UIKit.UIWindowScene",
+                "usr": "c:objc(cs)UIWindowScene"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A19HandleConfigurationV11windowSceneSo08UIWindowF0Cvp",
+            "mangledName": "$s11RouteBinary0A19HandleConfigurationV11windowSceneSo08UIWindowF0Cvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIWindowScene",
+                    "printedName": "UIKit.UIWindowScene",
+                    "usr": "c:objc(cs)UIWindowScene"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A19HandleConfigurationV11windowSceneSo08UIWindowF0Cvg",
+                "mangledName": "$s11RouteBinary0A19HandleConfigurationV11windowSceneSo08UIWindowF0Cvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applicationState",
+            "printedName": "applicationState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplicationStateProtocol",
+                "printedName": "any RouteInterface.UIApplicationStateProtocol",
+                "usr": "s:14RouteInterface26UIApplicationStateProtocolP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A19HandleConfigurationV16applicationState0A9Interface013UIApplicationF8Protocol_pvp",
+            "mangledName": "$s11RouteBinary0A19HandleConfigurationV16applicationState0A9Interface013UIApplicationF8Protocol_pvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIApplicationStateProtocol",
+                    "printedName": "any RouteInterface.UIApplicationStateProtocol",
+                    "usr": "s:14RouteInterface26UIApplicationStateProtocolP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A19HandleConfigurationV16applicationState0A9Interface013UIApplicationF8Protocol_pvg",
+                "mangledName": "$s11RouteBinary0A19HandleConfigurationV16applicationState0A9Interface013UIApplicationF8Protocol_pvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sceneIntentController",
+            "printedName": "sceneIntentController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SceneIntentControllerProtocol",
+                "printedName": "any RouteInterface.SceneIntentControllerProtocol",
+                "usr": "s:14RouteInterface29SceneIntentControllerProtocolP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A19HandleConfigurationV21sceneIntentController0A9Interface05ScenefG8Protocol_pvp",
+            "mangledName": "$s11RouteBinary0A19HandleConfigurationV21sceneIntentController0A9Interface05ScenefG8Protocol_pvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SceneIntentControllerProtocol",
+                    "printedName": "any RouteInterface.SceneIntentControllerProtocol",
+                    "usr": "s:14RouteInterface29SceneIntentControllerProtocolP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A19HandleConfigurationV21sceneIntentController0A9Interface05ScenefG8Protocol_pvg",
+                "mangledName": "$s11RouteBinary0A19HandleConfigurationV21sceneIntentController0A9Interface05ScenefG8Protocol_pvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stateRestoration",
+            "printedName": "stateRestoration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RouteStateRestoration",
+                "printedName": "any RouteInterface.RouteStateRestoration",
+                "usr": "s:14RouteInterface0A16StateRestorationP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A19HandleConfigurationV16stateRestoration0A9Interface0a5StateF0_pvp",
+            "mangledName": "$s11RouteBinary0A19HandleConfigurationV16stateRestoration0A9Interface0a5StateF0_pvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RouteStateRestoration",
+                    "printedName": "any RouteInterface.RouteStateRestoration",
+                    "usr": "s:14RouteInterface0A16StateRestorationP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A19HandleConfigurationV16stateRestoration0A9Interface0a5StateF0_pvg",
+                "mangledName": "$s11RouteBinary0A19HandleConfigurationV16stateRestoration0A9Interface0a5StateF0_pvg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(windowScene:applicationState:sceneIntentController:stateRestoration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RouteHandleConfiguration",
+                "printedName": "RouteBinary.RouteHandleConfiguration",
+                "usr": "s:11RouteBinary0A19HandleConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindowScene",
+                "printedName": "UIKit.UIWindowScene",
+                "usr": "c:objc(cs)UIWindowScene"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplicationStateProtocol",
+                "printedName": "any RouteInterface.UIApplicationStateProtocol",
+                "usr": "s:14RouteInterface26UIApplicationStateProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SceneIntentControllerProtocol",
+                "printedName": "any RouteInterface.SceneIntentControllerProtocol",
+                "usr": "s:14RouteInterface29SceneIntentControllerProtocolP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RouteStateRestoration",
+                "printedName": "any RouteInterface.RouteStateRestoration",
+                "usr": "s:14RouteInterface0A16StateRestorationP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11RouteBinary0A19HandleConfigurationV11windowScene16applicationState21sceneIntentController16stateRestorationACSo08UIWindowF0C_0A9Interface013UIApplicationH8Protocol_pAJ0fjkQ0_pAJ0ahM0_ptcfc",
+            "mangledName": "$s11RouteBinary0A19HandleConfigurationV11windowScene16applicationState21sceneIntentController16stateRestorationACSo08UIWindowF0C_0A9Interface013UIApplicationH8Protocol_pAJ0fjkQ0_pAJ0ahM0_ptcfc",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary0A19HandleConfigurationV9hashValueSivp",
+            "mangledName": "$s11RouteBinary0A19HandleConfigurationV9hashValueSivp",
+            "moduleName": "RouteBinary",
+            "implicit": true,
+            "declAttributes": [
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary0A19HandleConfigurationV9hashValueSivg",
+                "mangledName": "$s11RouteBinary0A19HandleConfigurationV9hashValueSivg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11RouteBinary0A19HandleConfigurationV",
+        "mangledName": "$s11RouteBinary0A19HandleConfigurationV",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RouteHandleConfigurable",
+            "printedName": "RouteHandleConfigurable",
+            "usr": "s:14RouteInterface0A18HandleConfigurableP",
+            "mangledName": "$s14RouteInterface0A18HandleConfigurableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "DependencyResolver",
+        "printedName": "DependencyResolver",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "AuthSessionInterface",
+        "printedName": "AuthSessionInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SceneManager",
+        "printedName": "SceneManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isApplicationBeingLaunched",
+            "printedName": "isApplicationBeingLaunched",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary12SceneManagerC26isApplicationBeingLaunchedSbvp",
+            "mangledName": "$s11RouteBinary12SceneManagerC26isApplicationBeingLaunchedSbvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary12SceneManagerC26isApplicationBeingLaunchedSbvg",
+                "mangledName": "$s11RouteBinary12SceneManagerC26isApplicationBeingLaunchedSbvg",
+                "moduleName": "RouteBinary",
+                "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+                "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sceneConfigurator",
+            "printedName": "sceneConfigurator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary12SceneManagerC17sceneConfiguratorxvp",
+            "mangledName": "$s11RouteBinary12SceneManagerC17sceneConfiguratorxvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary12SceneManagerC17sceneConfiguratorxvg",
+                "mangledName": "$s11RouteBinary12SceneManagerC17sceneConfiguratorxvg",
+                "moduleName": "RouteBinary",
+                "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+                "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "registeredScenes",
+            "printedName": "registeredScenes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<τ_0_0.SceneObject>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.SceneObject"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary12SceneManagerC16registeredScenesShy0C6ObjectQzGvp",
+            "mangledName": "$s11RouteBinary12SceneManagerC16registeredScenesShy0C6ObjectQzGvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<τ_0_0.SceneObject>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.SceneObject"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary12SceneManagerC16registeredScenesShy0C6ObjectQzGvg",
+                "mangledName": "$s11RouteBinary12SceneManagerC16registeredScenesShy0C6ObjectQzGvg",
+                "moduleName": "RouteBinary",
+                "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+                "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "registeredIntents",
+            "printedName": "registeredIntents",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<RouteInterface.SceneIntent>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SceneIntent",
+                    "printedName": "RouteInterface.SceneIntent",
+                    "usr": "s:14RouteInterface11SceneIntentO"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary12SceneManagerC17registeredIntentsShy0A9Interface0C6IntentOGvp",
+            "mangledName": "$s11RouteBinary12SceneManagerC17registeredIntentsShy0A9Interface0C6IntentOGvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<RouteInterface.SceneIntent>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SceneIntent",
+                        "printedName": "RouteInterface.SceneIntent",
+                        "usr": "s:14RouteInterface11SceneIntentO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary12SceneManagerC17registeredIntentsShy0A9Interface0C6IntentOGvg",
+                "mangledName": "$s11RouteBinary12SceneManagerC17registeredIntentsShy0A9Interface0C6IntentOGvg",
+                "moduleName": "RouteBinary",
+                "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+                "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "preferredWindowBehavior",
+            "printedName": "preferredWindowBehavior",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WindowBehavior",
+                "printedName": "RouteInterface.WindowBehavior",
+                "usr": "s:14RouteInterface14WindowBehaviorO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary12SceneManagerC23preferredWindowBehavior0A9Interface0fG0Ovp",
+            "mangledName": "$s11RouteBinary12SceneManagerC23preferredWindowBehavior0A9Interface0fG0Ovp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WindowBehavior",
+                    "printedName": "RouteInterface.WindowBehavior",
+                    "usr": "s:14RouteInterface14WindowBehaviorO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary12SceneManagerC23preferredWindowBehavior0A9Interface0fG0Ovg",
+                "mangledName": "$s11RouteBinary12SceneManagerC23preferredWindowBehavior0A9Interface0fG0Ovg",
+                "moduleName": "RouteBinary",
+                "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+                "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connectedScenes",
+            "printedName": "connectedScenes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<τ_0_0.SceneObject>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.SceneObject"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary12SceneManagerC15connectedScenesShy0C6ObjectQzGvp",
+            "mangledName": "$s11RouteBinary12SceneManagerC15connectedScenesShy0C6ObjectQzGvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<τ_0_0.SceneObject>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.SceneObject"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary12SceneManagerC15connectedScenesShy0C6ObjectQzGvg",
+                "mangledName": "$s11RouteBinary12SceneManagerC15connectedScenesShy0C6ObjectQzGvg",
+                "moduleName": "RouteBinary",
+                "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+                "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sceneConfigurator:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SceneManager",
+                "printedName": "RouteBinary.SceneManager<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:11RouteBinary12SceneManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11RouteBinary12SceneManagerC17sceneConfiguratorACyxGx_tcfc",
+            "mangledName": "$s11RouteBinary12SceneManagerC17sceneConfiguratorACyxGx_tcfc",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "applicationLaunched",
+            "printedName": "applicationLaunched()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC19applicationLaunchedyyF",
+            "mangledName": "$s11RouteBinary12SceneManagerC19applicationLaunchedyyF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "SceneHandleInjection"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scene",
+            "printedName": "scene(_:willConnectTo:options:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RouteInterface.RouteHandleProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RouteHandleProtocol",
+                    "printedName": "any RouteInterface.RouteHandleProtocol",
+                    "usr": "s:14RouteInterface0A14HandleProtocolP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIWindowScene",
+                "printedName": "UIKit.UIWindowScene",
+                "usr": "c:objc(cs)UIWindowScene"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UISceneSession",
+                "printedName": "UIKit.UISceneSession",
+                "usr": "c:objc(cs)UISceneSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ConnectionOptions",
+                "printedName": "UIKit.UIScene.ConnectionOptions",
+                "usr": "c:objc(cs)UISceneConnectionOptions"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC5scene_13willConnectTo7options12errorHandler0A9Interface0A14HandleProtocol_pSgSo08UIWindowC0C_So14UISceneSessionCSo0P17ConnectionOptionsCys5Error_pctKF",
+            "mangledName": "$s11RouteBinary12SceneManagerC5scene_13willConnectTo7options12errorHandler0A9Interface0A14HandleProtocol_pSgSo08UIWindowC0C_So14UISceneSessionCSo0P17ConnectionOptionsCys5Error_pctKF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scene",
+            "printedName": "scene(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.SceneObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.SceneObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIScene?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIScene",
+                    "printedName": "UIKit.UIScene",
+                    "usr": "c:objc(cs)UIScene"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC5scene3for0C6ObjectQzSgSo7UISceneCSg_tF",
+            "mangledName": "$s11RouteBinary12SceneManagerC5scene3for0C6ObjectQzSgSo7UISceneCSg_tF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uiScene",
+            "printedName": "uiScene(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIScene?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIScene",
+                    "printedName": "UIKit.UIScene",
+                    "usr": "c:objc(cs)UIScene"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.SceneObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.SceneObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC02uiC03forSo7UISceneCSg0C6ObjectQzSg_tF",
+            "mangledName": "$s11RouteBinary12SceneManagerC02uiC03forSo7UISceneCSg0C6ObjectQzSg_tF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "uiScenes",
+            "printedName": "uiScenes(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIScene]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIScene",
+                    "printedName": "UIKit.UIScene",
+                    "usr": "c:objc(cs)UIScene"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.SceneObject?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.SceneObject"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC8uiScenes3forSaySo7UISceneCG0C6ObjectQzSg_tF",
+            "mangledName": "$s11RouteBinary12SceneManagerC8uiScenes3forSaySo7UISceneCG0C6ObjectQzSg_tF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "routeHandle",
+            "printedName": "routeHandle(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any RouteInterface.RouteHandleProtocol)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RouteHandleProtocol",
+                    "printedName": "any RouteInterface.RouteHandleProtocol",
+                    "usr": "s:14RouteInterface0A14HandleProtocolP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIScene?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIScene",
+                    "printedName": "UIKit.UIScene",
+                    "usr": "c:objc(cs)UIScene"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC11routeHandle3for0A9Interface0aF8Protocol_pSgSo7UISceneCSg_tF",
+            "mangledName": "$s11RouteBinary12SceneManagerC11routeHandle3for0A9Interface0aF8Protocol_pSgSo7UISceneCSg_tF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Final",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "discardSceneSessions",
+            "printedName": "discardSceneSessions(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<UIKit.UISceneSession>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UISceneSession",
+                    "printedName": "UIKit.UISceneSession",
+                    "usr": "c:objc(cs)UISceneSession"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC07discardC8Sessions3foryShySo14UISceneSessionCG_tF",
+            "mangledName": "$s11RouteBinary12SceneManagerC07discardC8Sessions3foryShySo14UISceneSessionCG_tF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestSceneActivation",
+            "printedName": "requestSceneActivation(_:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.SceneObject"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC07requestC10Activation_12errorHandlery0C6ObjectQz_ys5Error_pctF",
+            "mangledName": "$s11RouteBinary12SceneManagerC07requestC10Activation_12errorHandlery0C6ObjectQz_ys5Error_pctF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestSceneDestruction",
+            "printedName": "requestSceneDestruction(_:executionHandler:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.SceneObject"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([UIKit.UIScene]) -> RouteInterface.UISceneExecutionPolicy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UISceneExecutionPolicy",
+                    "printedName": "RouteInterface.UISceneExecutionPolicy",
+                    "usr": "s:14RouteInterface22UISceneExecutionPolicyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIScene]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIScene",
+                        "printedName": "UIKit.UIScene",
+                        "usr": "c:objc(cs)UIScene"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC07requestC11Destruction_16executionHandler05errorH0y0C6ObjectQz_0A9Interface22UISceneExecutionPolicyOSaySo0L0CGcys5Error_pctF",
+            "mangledName": "$s11RouteBinary12SceneManagerC07requestC11Destruction_16executionHandler05errorH0y0C6ObjectQz_0A9Interface22UISceneExecutionPolicyOSaySo0L0CGcys5Error_pctF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestSceneDestruction",
+            "printedName": "requestSceneDestruction(_:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScene",
+                "printedName": "UIKit.UIScene",
+                "usr": "c:objc(cs)UIScene"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC07requestC11Destruction_12errorHandlerySo7UISceneC_ys5Error_pctF",
+            "mangledName": "$s11RouteBinary12SceneManagerC07requestC11Destruction_12errorHandlerySo7UISceneC_ys5Error_pctF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestSceneIntentActivation",
+            "printedName": "requestSceneIntentActivation(_:currentScene:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SceneIntent",
+                "printedName": "RouteInterface.SceneIntent",
+                "usr": "s:14RouteInterface11SceneIntentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScene",
+                "printedName": "UIKit.UIScene",
+                "usr": "c:objc(cs)UIScene"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC07requestC16IntentActivation_07currentC012errorHandlery0A9Interface0cF0O_So7UISceneCys5Error_pctKF",
+            "mangledName": "$s11RouteBinary12SceneManagerC07requestC16IntentActivation_07currentC012errorHandlery0A9Interface0cF0O_So7UISceneCys5Error_pctKF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scene",
+            "printedName": "scene(_:openURLContexts:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScene",
+                "printedName": "UIKit.UIScene",
+                "usr": "c:objc(cs)UIScene"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<UIKit.UIOpenURLContext>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIOpenURLContext",
+                    "printedName": "UIKit.UIOpenURLContext",
+                    "usr": "c:objc(cs)UIOpenURLContext"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC5scene_15openURLContexts12errorHandlerySo7UISceneC_ShySo16UIOpenURLContextCGys5Error_pctF",
+            "mangledName": "$s11RouteBinary12SceneManagerC5scene_15openURLContexts12errorHandlerySo7UISceneC_ShySo16UIOpenURLContextCGys5Error_pctF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scene",
+            "printedName": "scene(_:continue:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScene",
+                "printedName": "UIKit.UIScene",
+                "usr": "c:objc(cs)UIScene"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSUserActivity",
+                "printedName": "Foundation.NSUserActivity",
+                "usr": "c:objc(cs)NSUserActivity"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC5scene_8continue12errorHandlerySo7UISceneC_So14NSUserActivityCys5Error_pctF",
+            "mangledName": "$s11RouteBinary12SceneManagerC5scene_8continue12errorHandlerySo7UISceneC_So14NSUserActivityCys5Error_pctF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scene",
+            "printedName": "scene(_:performActionFor:completionHandler:errorHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScene",
+                "printedName": "UIKit.UIScene",
+                "usr": "c:objc(cs)UIScene"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIApplicationShortcutItem",
+                "printedName": "UIKit.UIApplicationShortcutItem",
+                "usr": "c:objc(cs)UIApplicationShortcutItem"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Bool) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(any Swift.Error) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary12SceneManagerC5scene_16performActionFor17completionHandler05errorJ0ySo7UISceneC_So25UIApplicationShortcutItemCySbcys5Error_pctF",
+            "mangledName": "$s11RouteBinary12SceneManagerC5scene_16performActionFor17completionHandler05errorJ0ySo7UISceneC_So25UIApplicationShortcutItemCySbcys5Error_pctF",
+            "moduleName": "RouteBinary",
+            "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+            "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11RouteBinary12SceneManagerC",
+        "mangledName": "$s11RouteBinary12SceneManagerC",
+        "moduleName": "RouteBinary",
+        "genericSig": "<τ_0_0 where τ_0_0 : RouteInterface.SceneConfiguratorProtocol>",
+        "sugared_genericSig": "<SceneConfigurator where SceneConfigurator : RouteInterface.SceneConfiguratorProtocol>",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Custom",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SceneHandleProtocol",
+            "printedName": "SceneHandleProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "SceneConfigurator",
+                "printedName": "SceneConfigurator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:14RouteInterface19SceneHandleProtocolP",
+            "mangledName": "$s14RouteInterface19SceneHandleProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIApplicationStateProtocol",
+            "printedName": "UIApplicationStateProtocol",
+            "usr": "s:14RouteInterface26UIApplicationStateProtocolP",
+            "mangledName": "$s14RouteInterface26UIApplicationStateProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SceneTerminationRequestType",
+        "printedName": "SceneTerminationRequestType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "system",
+            "printedName": "system",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RouteBinary.SceneTerminationRequestType.Type) -> RouteBinary.SceneTerminationRequestType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SceneTerminationRequestType",
+                    "printedName": "RouteBinary.SceneTerminationRequestType",
+                    "usr": "s:11RouteBinary27SceneTerminationRequestTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RouteBinary.SceneTerminationRequestType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SceneTerminationRequestType",
+                        "printedName": "RouteBinary.SceneTerminationRequestType",
+                        "usr": "s:11RouteBinary27SceneTerminationRequestTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11RouteBinary27SceneTerminationRequestTypeO6systemyA2CmF",
+            "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO6systemyA2CmF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationSession",
+            "printedName": "authenticationSession",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(RouteBinary.SceneTerminationRequestType.Type) -> RouteBinary.SceneTerminationRequestType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SceneTerminationRequestType",
+                    "printedName": "RouteBinary.SceneTerminationRequestType",
+                    "usr": "s:11RouteBinary27SceneTerminationRequestTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "RouteBinary.SceneTerminationRequestType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SceneTerminationRequestType",
+                        "printedName": "RouteBinary.SceneTerminationRequestType",
+                        "usr": "s:11RouteBinary27SceneTerminationRequestTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11RouteBinary27SceneTerminationRequestTypeO21authenticationSessionyA2CmF",
+            "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO21authenticationSessionyA2CmF",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SceneTerminationRequestType",
+                "printedName": "RouteBinary.SceneTerminationRequestType",
+                "usr": "s:11RouteBinary27SceneTerminationRequestTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SceneTerminationRequestType",
+                "printedName": "RouteBinary.SceneTerminationRequestType",
+                "usr": "s:11RouteBinary27SceneTerminationRequestTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary27SceneTerminationRequestTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "RouteBinary",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary27SceneTerminationRequestTypeO9hashValueSivp",
+            "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO9hashValueSivp",
+            "moduleName": "RouteBinary",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary27SceneTerminationRequestTypeO9hashValueSivg",
+                "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO9hashValueSivg",
+                "moduleName": "RouteBinary",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11RouteBinary27SceneTerminationRequestTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "RouteBinary",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isSystemRequest",
+            "printedName": "isSystemRequest",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary27SceneTerminationRequestTypeO08isSystemE0Sbvp",
+            "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO08isSystemE0Sbvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary27SceneTerminationRequestTypeO08isSystemE0Sbvg",
+                "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO08isSystemE0Sbvg",
+                "moduleName": "RouteBinary",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isAuthSessionTermination",
+            "printedName": "isAuthSessionTermination",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11RouteBinary27SceneTerminationRequestTypeO013isAuthSessionD0Sbvp",
+            "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO013isAuthSessionD0Sbvp",
+            "moduleName": "RouteBinary",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11RouteBinary27SceneTerminationRequestTypeO013isAuthSessionD0Sbvg",
+                "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO013isAuthSessionD0Sbvg",
+                "moduleName": "RouteBinary",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11RouteBinary27SceneTerminationRequestTypeO",
+        "mangledName": "$s11RouteBinary27SceneTerminationRequestTypeO",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SceneTerminationRequest",
+            "printedName": "SceneTerminationRequest",
+            "usr": "s:14RouteInterface23SceneTerminationRequestP",
+            "mangledName": "$s14RouteInterface23SceneTerminationRequestP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RouteBinary",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RouteInterface",
+        "printedName": "RouteInterface",
+        "declKind": "Import",
+        "moduleName": "RouteBinary"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Auth\/AuthSessionDelegateProxy.swift",
+      "kind": "StringLiteral",
+      "offset": 985,
+      "length": 24,
+      "value": "\"RouteBinary.AuthSessionDelegateProxy\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Auth\/SceneManager+AuthDelegateEvent.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1532,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
+      "kind": "StringLiteral",
+      "offset": 2409,
+      "length": 74,
+      "value": "\"Cycle detected in preferredPrecedingViewController() chain — truncated\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3702,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3788,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3843,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1380,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 1912,
+      "length": 26,
+      "value": "\"com.route.restoration.io\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2764,
+      "length": 7,
+      "value": "100000"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3263,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 3330,
+      "length": 18,
+      "value": "\"StateRestoration\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3363,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3453,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3559,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 3594,
+      "length": 41,
+      "value": "\"StateRestorableStorage >> FilePath --> \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7147,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "Array",
+      "offset": 8523,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 9080,
+      "length": 5,
+      "value": "\" | \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "Array",
+      "offset": 9880,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 10244,
+      "length": 5,
+      "value": "\" | \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 11392,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4247,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5094,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6694,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7196,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 12914,
+      "length": 115,
+      "value": "\"authenticationSessionHandle is missing — RouteHandle requires a non-nil auth session for every routing decision\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16449,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16593,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18301,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18836,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 18955,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23541,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 23635,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 2370,
+      "length": 11,
+      "value": "\"RouteBinary.RouteHandle\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 26522,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26566,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 27226,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27335,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27981,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31828,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31940,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 32771,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 33357,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 37395,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "FloatLiteral",
+      "offset": 38369,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 38475,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 38700,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39030,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 39069,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "FloatLiteral",
+      "offset": 39223,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39235,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39339,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 39671,
+      "length": 67,
+      "value": "\"Unexpected overlay window transition: \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 39721,
+      "length": 3,
+      "value": "\" → \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "StringLiteral",
+      "offset": 39737,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 11,
+      "value": "\"_sceneKey\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 17,
+      "value": "\"_sceneIntentKey\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
+      "kind": "StringLiteral",
+      "offset": 501,
+      "length": 11,
+      "value": "\"_sceneKey\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
+      "kind": "StringLiteral",
+      "offset": 621,
+      "length": 17,
+      "value": "\"_sceneIntentKey\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 660,
+      "length": 37,
+      "value": "\"com.route.sceneActivity.multiWindow\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 808,
+      "length": 41,
+      "value": "\"com.route.sceneActivity.sceneForwarding\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 660,
+      "length": 37,
+      "value": "\"com.route.sceneActivity.multiWindow\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 808,
+      "length": 41,
+      "value": "\"com.route.sceneActivity.sceneForwarding\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
+      "kind": "Array",
+      "offset": 4207,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
+      "kind": "Dictionary",
+      "offset": 4289,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
+      "kind": "Dictionary",
+      "offset": 4368,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
+      "kind": "Dictionary",
+      "offset": 8184,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9063,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9116,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Dictionary",
+      "offset": 3621,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3765,
+      "length": 53,
+      "value": "\"Connecting Scene >> \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 3817,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3965,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4024,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Array",
+      "offset": 4098,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Dictionary",
+      "offset": 4229,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Dictionary",
+      "offset": 4312,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Array",
+      "offset": 11112,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11376,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Dictionary",
+      "offset": 11473,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Array",
+      "offset": 12743,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
+      "kind": "Array",
+      "offset": 12837,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1989,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "Array",
+      "offset": 4609,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8406,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8853,
+      "length": 109,
+      "value": "\"Restoration Info >> \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "Dictionary",
+      "offset": 8922,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8926,
+      "length": 2,
+      "value": "\" >> \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "StringLiteral",
+      "offset": 8961,
+      "length": 89,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
+      "kind": "Dictionary",
+      "offset": 9046,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
+      "kind": "BooleanLiteral",
+      "offset": 814,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
+      "kind": "BooleanLiteral",
+      "offset": 844,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1026,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1056,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1997,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 33,
+      "value": "\"RouteBinary.SanitizedNavigationViewController\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 33,
+      "value": "\"RouteBinary.SanitizedNavigationViewController\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1037,
+      "length": 33,
+      "value": "\"RouteBinary.SanitizedNavigationViewController\""
+    }
+  ]
+}

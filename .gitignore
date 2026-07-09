@@ -1,0 +1,9 @@
+.DS_Store
+.build/
+.xcbuild/
+*.xcarchive
+
+# The xcframework IS committed (private repo, .binaryTarget(path:)); consumers get
+# it via git-clone. The distribution zip is only needed for remote/release hosting,
+# so it stays out of the repo.
+Artifacts/*.zip
