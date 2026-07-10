@@ -1,0 +1,42 @@
+{
+  "originHash" : "e66ac1ba34bcbff779970a8257117a9ce5f744239e71df44afcad7a4d8a6ac35",
+  "pins" : [
+    {
+      "identity" : "authsessionkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kaVish2214/AuthSessionKit",
+      "state" : {
+        "revision" : "14359deedd6c4b718644a7703062dff0679ad921",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "biometricauthkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kaVish2214/BiometricAuthKit",
+      "state" : {
+        "revision" : "fa061f29093c8a24b21204aed1e6e966656af35a",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory",
+      "state" : {
+        "revision" : "ccc898f21992ebc130bc04cc197460a5ae230bcf",
+        "version" : "2.5.3"
+      }
+    },
+    {
+      "identity" : "utilitykit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kaVish2214/UtilityKit",
+      "state" : {
+        "revision" : "56eaa53359f8d3ded164625f82c2c66e7810c2b0",
+        "version" : "0.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}

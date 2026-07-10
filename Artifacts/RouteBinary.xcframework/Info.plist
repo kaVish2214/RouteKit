@@ -37,7 +37,7 @@
 		</dict>
 		<dict>
 			<key>BinaryPath</key>
-			<string>RouteBinary.framework/Versions/A/RouteBinary</string>
+			<string>RouteBinary.framework/RouteBinary</string>
 			<key>LibraryIdentifier</key>
 			<string>ios-arm64_x86_64-maccatalyst</string>
 			<key>LibraryPath</key>

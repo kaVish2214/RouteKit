@@ -57,7 +57,15 @@ let package = Package(
     name: "${MODULE_NAME}",
     platforms: [.iOS(.v14), .macCatalyst(.v14)],
     products: [
-        .library(name: "${MODULE_NAME}", type: .dynamic, targets: ["${MODULE_NAME}"]),
+        // STATIC. A dynamic framework statically EMBEDS its Swift dependencies
+        // (RouteInterface, DependencyResolver, SwiftConcurrency, AuthSessionInterface,
+        // Factory, …) into its binary, so a consumer that also compiles those modules
+        // from source ends up with TWO copies. Cross-boundary calls (e.g. SceneManager
+        // resolving via Factory's Container.shared) then reach a different copy →
+        // EXC_BAD_ACCESS. The static product emits a single merged object whose
+        // dependency symbols stay UNDEFINED (external), satisfied by the consumer's
+        // single copy of each module (declared on the SPM shim target).
+        .library(name: "${MODULE_NAME}", type: .static, targets: ["${MODULE_NAME}"]),
     ],
     dependencies: [
         .package(url: "https://github.com/kaVish2214/UtilityKit", .upToNextMajor(from: "0.1.0")),
@@ -97,70 +105,94 @@ let package = Package(
 )
 EOF
 
-# --- 3. Archive one framework per platform slice ------------------------------
-ARCHIVE_DIR="${BUILD_DIR}/archives"
-rm -rf "${ARCHIVE_DIR}"
-mkdir -p "${ARCHIVE_DIR}"
+# --- 3. Build one static slice per platform -----------------------------------
+STAGE_DIR="${BUILD_DIR}/staged"
+rm -rf "${STAGE_DIR}"
+mkdir -p "${STAGE_DIR}"
 
 # Pretty-print with xcbeautify if available, otherwise pass through raw.
 PRETTY=(cat)
 command -v xcbeautify >/dev/null 2>&1 && PRETTY=(xcbeautify)
 
-BPP="${BUILD_DIR}/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/${MODULE_NAME}/BuildProductsPath"
+DD="${BUILD_DIR}/DerivedData"
+CREATE_ARGS=()
 
-# build_slice <destination> <archive-name> <config-suffix>
+# build_slice <destination> <slice-name> <config-suffix>
 #
-# Archives one platform slice, then copies the emitted <MODULE_NAME>.swiftmodule
-# (containing the binary module + the resilient .swiftinterface) into the
-# framework's Modules/ directory. Library evolution is enabled per-target via the
-# generated manifest, so the archive itself does NOT set
-# BUILD_LIBRARY_FOR_DISTRIBUTION — that global setting would drag every source
-# dependency into interface emission and trip the MultiCastDelegate verifier bug.
-# The trade-off is that the swiftmodule is not auto-packaged into the framework,
-# so we copy it in ourselves.
+# Builds RouteBinary as a STATIC product (one merged object with dependency symbols
+# left undefined), wraps that object into a .a with libtool, and stages the Swift
+# module + its .swiftinterface for `-create-xcframework -library`.
+#
+# Library evolution is enabled per-target in the generated manifest (not via a
+# global BUILD_LIBRARY_FOR_DISTRIBUTION, which would force every source dependency
+# to emit an interface and trip the MultiCastDelegate verifier bug). It exists only
+# to produce the .swiftinterface that create-xcframework requires per slice — the
+# .swiftinterface is emitted into the per-arch intermediates, so we copy it in.
 build_slice () {
     local destination="$1"
     local name="$2"
     local config="$3"
-    echo "▸ Archiving ${name} (${destination})…"
+    echo "▸ Building ${name} (${destination})…"
     set -o pipefail
-    xcodebuild archive \
+    xcodebuild build \
         -workspace "${BUILD_PKG}" \
         -scheme "${MODULE_NAME}" \
+        -configuration Release \
         -destination "${destination}" \
-        -archivePath "${ARCHIVE_DIR}/${name}.xcarchive" \
-        -derivedDataPath "${BUILD_DIR}/DerivedData" \
-        SKIP_INSTALL=NO \
+        -derivedDataPath "${DD}" \
         | "${PRETTY[@]}"
 
-    # Package the Swift module into the framework bundle.
-    local fw="${ARCHIVE_DIR}/${name}.xcarchive/Products/usr/local/lib/${MODULE_NAME}.framework"
-    local module_src="${BPP}/Release-${config}/${MODULE_NAME}.swiftmodule"
-    if [[ ! -d "${module_src}" ]]; then
-        # Fallback: locate it if the config directory name differs.
-        module_src="$(find "${BPP}" -type d -name "${MODULE_NAME}.swiftmodule" | head -1)"
-    fi
-    echo "▸ Embedding module: ${module_src}"
-    rm -rf "${fw}/Modules"
-    mkdir -p "${fw}/Modules"
-    cp -R "${module_src}" "${fw}/Modules/${MODULE_NAME}.swiftmodule"
+    local products="${DD}/Build/Products/Release-${config}"
+    local obj="${products}/${MODULE_NAME}.o"                 # merged, fat, deps undefined
+    local module_src="${products}/${MODULE_NAME}.swiftmodule"
 
-    # The .swiftinterface is emitted into the per-arch intermediates rather than the
-    # product module dir, so copy it in alongside each .swiftmodule. create-xcframework
-    # requires a .swiftinterface per slice for a Swift framework.
-    local dst_mod="${fw}/Modules/${MODULE_NAME}.swiftmodule"
-    local objects="${BUILD_DIR}/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/${MODULE_NAME}/IntermediateBuildFilesPath/${MODULE_NAME}.build/Release-${config}/${MODULE_NAME}.build/Objects-normal"
+    # Assemble a STATIC FRAMEWORK by hand: the framework binary is a static archive
+    # of only RouteBinary's own object (deps stay undefined), and the Swift module
+    # lives at Modules/RouteBinary.swiftmodule so `import RouteBinary` resolves. (A
+    # static *library* xcframework hides the swiftmodule under Headers/, which SPM
+    # does not add to the Swift import path — hence a framework, not a library.)
+    local fw="${STAGE_DIR}/${name}/${MODULE_NAME}.framework"
+    local mods="${fw}/Modules/${MODULE_NAME}.swiftmodule"
+    mkdir -p "${mods}"
+
+    echo "▸ Wrapping ${obj} → static framework binary"
+    libtool -static -o "${fw}/${MODULE_NAME}" "${obj}"
+    cp -R "${module_src}/." "${mods}/"
+
+    cat > "${fw}/Info.plist" <<PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleDevelopmentRegion</key><string>en</string>
+  <key>CFBundleExecutable</key><string>${MODULE_NAME}</string>
+  <key>CFBundleIdentifier</key><string>com.route.${MODULE_NAME}</string>
+  <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+  <key>CFBundleName</key><string>${MODULE_NAME}</string>
+  <key>CFBundlePackageType</key><string>FMWK</string>
+  <key>CFBundleShortVersionString</key><string>1.0</string>
+  <key>CFBundleVersion</key><string>1</string>
+  <key>MinimumOSVersion</key><string>14.0</string>
+</dict></plist>
+PLIST
+
+    # create-xcframework requires a .swiftinterface per arch; it is emitted into the
+    # per-arch intermediates, not the product module dir. Copy it in beside each
+    # .swiftmodule as <triple>.swiftinterface.
+    local objects="${DD}/Build/Intermediates.noindex/${MODULE_NAME}.build/Release-${config}/${MODULE_NAME}.build/Objects-normal"
     local mod triple arch iface
-    for mod in "${dst_mod}"/*.swiftmodule; do
+    for mod in "${mods}"/*.swiftmodule; do
         triple="$(basename "${mod}" .swiftmodule)"   # e.g. arm64-apple-ios-simulator
         arch="${triple%%-*}"                         # e.g. arm64
         iface="${objects}/${arch}/${MODULE_NAME}.swiftinterface"
+        [[ -f "${iface}" ]] || iface="$(find "${objects}" -name "${MODULE_NAME}.swiftinterface" | head -1)"
         if [[ -f "${iface}" ]]; then
-            cp "${iface}" "${dst_mod}/${triple}.swiftinterface"
+            cp "${iface}" "${mods}/${triple}.swiftinterface"
         else
-            echo "⚠︎  missing .swiftinterface for ${triple} (looked in ${iface})"
+            echo "⚠︎  missing .swiftinterface for ${triple}"
         fi
     done
+
+    CREATE_ARGS+=( -framework "${fw}" )
 }
 
 build_slice "generic/platform=iOS"                          "ios"       "iphoneos"
@@ -172,14 +204,7 @@ echo "▸ Creating xcframework…"
 rm -rf "${XCFRAMEWORK}"
 mkdir -p "${ARTIFACTS_DIR}"
 
-# SwiftPM installs archived frameworks under usr/local/lib (not Library/Frameworks).
-fw_path () { echo "${ARCHIVE_DIR}/$1.xcarchive/Products/usr/local/lib/${MODULE_NAME}.framework"; }
-
-xcodebuild -create-xcframework \
-    -framework "$(fw_path ios)" \
-    -framework "$(fw_path ios-sim)" \
-    -framework "$(fw_path catalyst)" \
-    -output "${XCFRAMEWORK}"
+xcodebuild -create-xcframework "${CREATE_ARGS[@]}" -output "${XCFRAMEWORK}"
 
 # --- 5. Zip + checksum (for remote hosting) ----------------------------------
 ZIP_PATH="${ARTIFACTS_DIR}/${MODULE_NAME}.xcframework.zip"

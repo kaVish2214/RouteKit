@@ -38,6 +38,14 @@ git tag x.y.z && git push origin main --tags    # SPM resolves the tag as the ve
   symbolicate crash reports from consumers.
 - The xcframework is compiled against specific majors of UtilityKit /
   AuthSessionKit. Keep consumers on the same major to avoid module-compat issues.
+- **Why the xcframework is a STATIC framework, not dynamic:** a dynamic framework
+  statically embeds its Swift dependencies (Factory, RouteInterface, …) into its
+  binary. A consumer that also compiles those modules from source then has two
+  copies, and cross-boundary calls (e.g. `SceneManager` resolving via Factory's
+  `Container.shared`) reach a different copy → `EXC_BAD_ACCESS`. The static build
+  leaves dependency symbols undefined so the consumer's single copy satisfies them.
+  The build wraps SwiftPM's merged `RouteBinary.o` into a static framework binary
+  with `libtool`.
 - **Why library evolution is scoped per-target, not a global
   `BUILD_LIBRARY_FOR_DISTRIBUTION`:** globally, every source dependency is forced
   to emit a textual `.swiftinterface`, and UtilityKit's `MultiCastDelegate` module
