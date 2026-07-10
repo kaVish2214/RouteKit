@@ -28,7 +28,7 @@ This is a **private** Swift package. Make sure you have repository access (an SS
 key or a token with `repo` scope), then add it via SwiftPM:
 
 ```swift
-.package(url: "https://github.com/kaVish2214/RouteKit-Distribution.git", from: "0.1.0")
+.package(url: "https://github.com/kaVish2214/RouteKit-Distribution.git", from: "0.1.1")
 ```
 
 ```swift

@@ -18,6 +18,12 @@ git add -A && git commit -m "Release x.y.z"
 git tag x.y.z && git push origin main --tags    # SPM resolves the tag as the version
 ```
 
+> **NEVER move or re-point an existing tag.** SwiftPM records a tag→commit
+> fingerprint the first time it resolves a version and hard-fails
+> (`Revision … does not match previously recorded value`) if the tag later points
+> elsewhere — on every machine that cached the old one. Always cut a new version
+> (`x.y.z+1`) instead of re-tagging.
+
 `Scripts/build-xcframework.sh`:
 
 1. Syncs `RouteInterface` source from `../../RouteKit`.
