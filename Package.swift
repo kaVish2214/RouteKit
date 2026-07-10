@@ -13,10 +13,10 @@ import PackageDescription
 //     implementation is sealed. Consumers still `import Route`; a thin umbrella
 //     target re-exports the binary.
 //
-// The Route source lives ONLY in the private development package
-// (../RouteKit). Run `Scripts/build-xcframework.sh` from that package to
-// (re)generate `Artifacts/RouteBinary.xcframework` and sync the interface
-// sources into this package.
+// The Route source AND the build tooling live ONLY in the private development
+// package (../../RouteKit). Run its `Scripts/build-xcframework.sh` to (re)generate
+// `Artifacts/RouteBinary.xcframework` and sync the interface sources into this
+// package. Nothing here reveals how the binary is produced.
 //
 // SPM constraint that shapes this file: a `.binaryTarget` cannot declare
 // dependencies. The xcframework internally references RouteInterface,
