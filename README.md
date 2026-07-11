@@ -24,26 +24,24 @@ program against) ships as source. Usage is identical to a source package —
 
 ## Installation
 
-This is a **private** Swift package. Make sure you have repository access (an SSH
-key or a token with `repo` scope), then add it via SwiftPM:
+Add RouteKit via SwiftPM:
 
 ```swift
-.package(url: "https://github.com/kaVish2214/RouteKit-Distribution.git", from: "0.1.1")
+.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.1")
 ```
 
 ```swift
 .target(
     name: "App",
     dependencies: [
-        .product(name: "Route", package: "RouteKit-Distribution"),
-        .product(name: "RouteInterface", package: "RouteKit-Distribution"),
+        .product(name: "Route", package: "RouteKit"),
+        .product(name: "RouteInterface", package: "RouteKit"),
     ]
 )
 ```
 
-The `Route` engine is delivered as a signed `xcframework` bundled with the
-package, so SwiftPM fetches it as part of resolving the dependency — no separate
-download step.
+The `Route` engine is delivered as an `xcframework` bundled with the package, so
+SwiftPM fetches it while resolving the dependency — no separate download step.
 
 ---
 
