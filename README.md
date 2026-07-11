@@ -781,6 +781,11 @@ control, with the delegate wiring that makes it all fire.
 RouteKit is **free for personal use, indie developers, and small teams** — use it
 and ship it, no strings attached.
 
+<!--
+  Sponsorship section is hidden until the GitHub Sponsors profile is approved.
+  To re-enable: delete this opening comment marker and the closing one below,
+  once the Sponsor button renders on the repo.
+
 If RouteKit saves you time, you can support its development:
 
 - ❤️ [**Sponsor on GitHub**](https://github.com/sponsors/kaVish2214) — one-time or recurring.
@@ -803,6 +808,7 @@ A few things kept deliberately fair:
 - **Names and logos are only listed for _public_ sponsors.** Sponsor privately and you stay private; reach out any time if you'd like to be credited (or removed).
 - Support tiers are **best-effort from a solo maintainer** — genuinely prioritised, but not a contractual SLA. If you need guaranteed, contracted support, that's the [Custom work & consulting](#custom-work--consulting) route instead.
 - Cancel anytime; recurring tiers are month-to-month with no lock-in.
+-->
 
 **Using RouteKit inside a company?** If your organisation depends on RouteKit and
 you'd like to support its continued development — or discuss priority support and
