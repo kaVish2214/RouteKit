@@ -3,6 +3,8 @@
 //  RouteKit
 //
 //  Created by kavi gevariya on 06/07/26.
+//  Copyright © 2026 Kavi Gevariya (@kaVish2214).
+//  Licensed under the Business Source License 1.1. See LICENSE.
 //
 
 import UIKit

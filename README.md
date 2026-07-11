@@ -776,6 +776,81 @@ control, with the delegate wiring that makes it all fire.
 
 ---
 
+## Support & commercial use
+
+RouteKit is **free for personal use, indie developers, and small teams** — use it
+and ship it, no strings attached.
+
+If RouteKit saves you time, you can support its development:
+
+- ❤️ [**Sponsor on GitHub**](https://github.com/sponsors/kaVish2214) — one-time or recurring.
+
+### Sponsorship tiers
+
+Sponsorship is entirely optional — RouteKit stays free either way. If you'd like to
+back its development, these are the planned tiers:
+
+| Tier | Suggested | What you get |
+|---|---|---|
+| ☕ **Coffee** | $3 / mo or one-time | My thanks, and your name in the project's backers list. |
+| 🙌 **Supporter** | $10 / mo | The above — plus GitHub shows a Sponsor badge on your profile automatically. |
+| 🧭 **Priority** | $25 / mo | The above, plus your questions and issues are looked at first. |
+| 🏢 **Team / Company** | $100–250 / mo | Priority support, a short periodic check-in on your RouteKit integration, and your logo + link in this README. |
+
+A few things kept deliberately fair:
+
+- The **Sponsor badge** on a sponsor's profile is applied by GitHub automatically — there's nothing to claim, and it costs you nothing to receive.
+- **Names and logos are only listed for _public_ sponsors.** Sponsor privately and you stay private; reach out any time if you'd like to be credited (or removed).
+- Support tiers are **best-effort from a solo maintainer** — genuinely prioritised, but not a contractual SLA. If you need guaranteed, contracted support, that's the [Custom work & consulting](#custom-work--consulting) route instead.
+- Cancel anytime; recurring tiers are month-to-month with no lock-in.
+
+**Using RouteKit inside a company?** If your organisation depends on RouteKit and
+you'd like to support its continued development — or discuss priority support and
+commercial terms — reach out on
+[LinkedIn](https://www.linkedin.com/in/kavi-gevariya-58650b125).
+
+> Today RouteKit is free for everyone. Commercial licensing terms for organisations
+> may apply to **future** releases; already-released versions keep the terms they
+> shipped under.
+
+---
+
+## Custom work & consulting
+
+**Kavi Gevariya** — Senior iOS Engineer · Mobile Architecture & SDK Design
+*Building iOS platforms that scale — modular, testable, and boring in all the right places.*
+
+RouteKit is a distillation of how I approach production iOS: isolate concerns behind
+clean interfaces, ship engines as versioned binaries, and let feature teams move fast
+without stepping on each other. I work with teams that have outgrown a single-target
+app and need an architecture that holds up as the codebase, the team, and the feature
+set grow.
+
+Where I help:
+
+- 🧩 **Modular architecture at scale** — decomposing monolithic apps into independent
+  SPM modules with explicit public interfaces, enforced dependency boundaries, and
+  parallelizable build/test units that keep CI fast and teams unblocked.
+- 📦 **SDK & binary distribution** — designing library-facing APIs, shipping sealed
+  `xcframework` binaries with library evolution, versioning, and source-vs-binary
+  split strategies (the exact model RouteKit uses).
+- 🧭 **App lifecycle & navigation** — scene management, routing, deep-linking, intent
+  handling, and state restoration for multi-window UIKit apps.
+- 🎛️ **UIKit ↔ SwiftUI hybrid** — incrementally adopting SwiftUI inside established
+  UIKit codebases (and vice versa) with interop that stays predictable at the
+  navigation and lifecycle seams, rather than fighting each framework's ownership model.
+- 🔐 **Auth, security & DI** — session/auth flows, biometric gating, and
+  dependency-injection design that stays testable across module boundaries.
+
+If your team is untangling a large iOS codebase, standing up an internal SDK, or
+planning a UIKit-to-SwiftUI migration, I can help — as an architect, an embedded
+contributor, or a reviewer.
+
+📩 **Open to consulting, architecture reviews, and contract work** — reach out on
+[LinkedIn](https://www.linkedin.com/in/kavi-gevariya-58650b125).
+
+---
+
 ## Dependencies
 
 | Package | Role |
@@ -797,3 +872,46 @@ Transitively: `AuthSessionKit` pulls `BiometricAuthKit`; `UtilityKit` pulls `Fac
   (iPad and Mac); single-window hosts degrade gracefully to current-window
   routing.
 - UIKit (`UIWindow`, `UINavigationController`, `UIVisualEffectView`).
+
+---
+
+## Contributing
+
+Feedback and bug reports are genuinely appreciated — please open an issue with a clear
+reproduction and your environment details.
+
+**Code contributions** are handled a little differently. RouteKit is maintained by a
+single author, and its licensing model (see [License](#license)) depends on unified
+copyright ownership so that future releases can be relicensed cleanly. To keep those
+options open for everyone, pull requests are accepted only under a **Contributor License
+Agreement (CLA)**. If you'd like to contribute code, please **open an issue to propose
+the change before submitting a pull request** — the CLA will be shared there before any
+code is merged.
+
+## Acknowledgements
+
+RouteKit is built on the shoulders of excellent open-source work, with gratitude:
+
+- [**Factory**](https://github.com/hmlongco/Factory) — a Swift dependency-injection
+  container by **Michael Long**, licensed under the **MIT License** (© 2022 Michael
+  Long). RouteKit uses it indirectly, through UtilityKit's `DependencyResolver`; Factory
+  is fetched by SwiftPM from its own repository, where its license applies in full.
+
+It also develops alongside its sibling packages
+[**UtilityKit**](https://github.com/kaVish2214/UtilityKit) and
+[**AuthSessionKit**](https://github.com/kaVish2214/AuthSessionKit).
+
+---
+
+## License
+
+RouteKit is licensed under the [Business Source License 1.1](LICENSE) (BSL 1.1).
+
+- **Free to use in production, without limitation**, for everyone today.
+- Each released version automatically converts to the **Apache License 2.0** on
+  its Change Date (four years after release).
+- The license applies **per version** — a version keeps the terms it shipped
+  under, and future releases may carry a different Additional Use Grant.
+
+For alternative or commercial licensing arrangements, contact
+[Kavi Gevariya on LinkedIn](https://www.linkedin.com/in/kavi-gevariya-58650b125).
