@@ -3199,637 +3199,637 @@
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Auth\/AuthSessionDelegateProxy.swift",
       "kind": "StringLiteral",
-      "offset": 985,
+      "offset": 1101,
       "length": 24,
       "value": "\"RouteBinary.AuthSessionDelegateProxy\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Auth\/SceneManager+AuthDelegateEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 1532,
+      "offset": 1648,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
       "kind": "StringLiteral",
-      "offset": 2409,
+      "offset": 2525,
       "length": 74,
       "value": "\"Cycle detected in preferredPrecedingViewController() chain — truncated\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 3702,
+      "offset": 3818,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
       "kind": "IntegerLiteral",
-      "offset": 3788,
+      "offset": 3904,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Navigation\/RouteHandle+BackStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 3843,
+      "offset": 3959,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 1380,
+      "offset": 1496,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 1912,
+      "offset": 2028,
       "length": 26,
       "value": "\"com.route.restoration.io\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2764,
+      "offset": 2880,
       "length": 7,
       "value": "100000"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3263,
+      "offset": 3379,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 3330,
+      "offset": 3446,
       "length": 18,
       "value": "\"StateRestoration\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3363,
+      "offset": 3479,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3453,
+      "offset": 3569,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 3559,
+      "offset": 3675,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 7059,
+      "offset": 7175,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "Array",
-      "offset": 8435,
+      "offset": 8551,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 8992,
+      "offset": 9108,
       "length": 5,
       "value": "\" | \""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "Array",
-      "offset": 9792,
+      "offset": 9908,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 10156,
+      "offset": 10272,
       "length": 5,
       "value": "\" | \""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 11304,
+      "offset": 11420,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 4247,
+      "offset": 4363,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 5094,
+      "offset": 5210,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 6694,
+      "offset": 6810,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 7196,
+      "offset": 7312,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 9966,
+      "offset": 10082,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "StringLiteral",
-      "offset": 12914,
+      "offset": 13030,
       "length": 115,
       "value": "\"authenticationSessionHandle is missing — RouteHandle requires a non-nil auth session for every routing decision\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 16449,
+      "offset": 16565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 16593,
+      "offset": 16709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 18301,
+      "offset": 18417,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 18836,
+      "offset": 18952,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 18955,
+      "offset": 19071,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 23541,
+      "offset": 23657,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 23635,
+      "offset": 23751,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "StringLiteral",
-      "offset": 2370,
+      "offset": 2486,
       "length": 11,
       "value": "\"RouteBinary.RouteHandle\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 26522,
+      "offset": 26638,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 26566,
+      "offset": 26682,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 27226,
+      "offset": 27342,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 27335,
+      "offset": 27451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 27981,
+      "offset": 28097,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 31828,
+      "offset": 31944,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 31940,
+      "offset": 32056,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 32771,
+      "offset": 32887,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 33357,
+      "offset": 33473,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 37395,
+      "offset": 37511,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "FloatLiteral",
-      "offset": 38369,
+      "offset": 38485,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 38475,
+      "offset": 38591,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 38700,
+      "offset": 38816,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "IntegerLiteral",
-      "offset": 39030,
+      "offset": 39146,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "BooleanLiteral",
-      "offset": 39069,
+      "offset": 39185,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "FloatLiteral",
-      "offset": 39223,
-      "length": 3,
-      "value": "0.3"
-    },
-    {
-      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
-      "kind": "IntegerLiteral",
-      "offset": 39235,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
-      "kind": "IntegerLiteral",
       "offset": 39339,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39351,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
+      "kind": "IntegerLiteral",
+      "offset": 39455,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "StringLiteral",
-      "offset": 39671,
+      "offset": 39787,
       "length": 67,
       "value": "\"Unexpected overlay window transition: \""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "StringLiteral",
-      "offset": 39721,
+      "offset": 39837,
       "length": 3,
       "value": "\" → \""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Routing\/RouteHandle.swift",
       "kind": "StringLiteral",
-      "offset": 39737,
+      "offset": 39853,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
       "kind": "StringLiteral",
-      "offset": 501,
+      "offset": 617,
       "length": 11,
       "value": "\"_sceneKey\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
       "kind": "StringLiteral",
-      "offset": 621,
+      "offset": 737,
       "length": 17,
       "value": "\"_sceneIntentKey\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
       "kind": "StringLiteral",
-      "offset": 501,
+      "offset": 617,
       "length": 11,
       "value": "\"_sceneKey\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/Scene+Support\/StorageKey.swift",
       "kind": "StringLiteral",
-      "offset": 621,
+      "offset": 737,
       "length": 17,
       "value": "\"_sceneIntentKey\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
       "kind": "StringLiteral",
-      "offset": 660,
+      "offset": 776,
       "length": 37,
       "value": "\"com.route.sceneActivity.multiWindow\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 924,
       "length": 41,
       "value": "\"com.route.sceneActivity.sceneForwarding\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
       "kind": "StringLiteral",
-      "offset": 660,
+      "offset": 776,
       "length": 37,
       "value": "\"com.route.sceneActivity.multiWindow\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneActivity.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 924,
       "length": 41,
       "value": "\"com.route.sceneActivity.sceneForwarding\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
       "kind": "Array",
-      "offset": 4207,
+      "offset": 4323,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
       "kind": "Dictionary",
-      "offset": 4289,
+      "offset": 4405,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
       "kind": "Dictionary",
-      "offset": 4368,
+      "offset": 4484,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
       "kind": "Dictionary",
-      "offset": 8184,
+      "offset": 8300,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
       "kind": "BooleanLiteral",
-      "offset": 9063,
+      "offset": 9179,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+LifeCycle.swift",
       "kind": "BooleanLiteral",
-      "offset": 9116,
+      "offset": 9232,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Dictionary",
-      "offset": 3621,
+      "offset": 3737,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 3886,
+      "offset": 4002,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 3945,
+      "offset": 4061,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Array",
-      "offset": 4019,
+      "offset": 4135,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Dictionary",
-      "offset": 4150,
+      "offset": 4266,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Dictionary",
-      "offset": 4233,
+      "offset": 4349,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Array",
-      "offset": 11033,
+      "offset": 11149,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "BooleanLiteral",
-      "offset": 11297,
+      "offset": 11413,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Dictionary",
-      "offset": 11394,
+      "offset": 11510,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Array",
-      "offset": 12664,
+      "offset": 12780,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager+UISceneInitialRequest.swift",
       "kind": "Array",
-      "offset": 12758,
+      "offset": 12874,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1989,
+      "offset": 2105,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
       "kind": "Array",
-      "offset": 4609,
+      "offset": 4725,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8406,
+      "offset": 8522,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
       "kind": "BooleanLiteral",
-      "offset": 814,
+      "offset": 930,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
       "kind": "BooleanLiteral",
-      "offset": 844,
+      "offset": 960,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
       "kind": "BooleanLiteral",
-      "offset": 1026,
+      "offset": 1142,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneTerminationRequestType.swift",
       "kind": "BooleanLiteral",
-      "offset": 1056,
+      "offset": 1172,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1997,
+      "offset": 2113,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1153,
       "length": 33,
       "value": "\"RouteBinary.SanitizedNavigationViewController\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1153,
       "length": 33,
       "value": "\"RouteBinary.SanitizedNavigationViewController\""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/ViewController\/SanitizedNavigationViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1153,
       "length": 33,
       "value": "\"RouteBinary.SanitizedNavigationViewController\""
     }

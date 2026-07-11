@@ -27,7 +27,7 @@ program against) ships as source. Usage is identical to a source package —
 Add RouteKit via SwiftPM:
 
 ```swift
-.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.1")
+.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.3")
 ```
 
 ```swift
