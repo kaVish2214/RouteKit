@@ -22,8 +22,7 @@ import Foundation
 ///
 /// The `rawValue` is what survives a trip through the system: it's stashed in an
 /// `NSUserActivity`'s `userInfo` when RouteKit activates or restores a scene, and
-/// decoded back into a `SceneRepresentable` on the receiving side (see the
-/// scene-identity activities in the `Route` module). `RawValue: Hashable` lets
+/// decoded back into a `SceneRepresentable` on the receiving side. `RawValue: Hashable` lets
 /// scenes live in a `Set` and act as dictionary keys during intent fan-out.
 ///
 /// > Important: `rawValue` **must be a property-list type** — `String` or `Int`

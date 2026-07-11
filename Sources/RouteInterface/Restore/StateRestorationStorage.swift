@@ -15,8 +15,8 @@ import AuthSessionInterface
 /// ``StateRestorableRecord`` values, one per scene session.
 ///
 /// The restoration handle talks to this protocol, never to files directly, so
-/// the *where* and *how* of persistence is swappable: the default
-/// `StateRecordStorage` (in the `Route` module) writes property-list files under
+/// the *where* and *how* of persistence is swappable: RouteKit's built-in
+/// store writes property-list files under
 /// Application Support, but a host can register its own conformer via
 /// ``StateRestorationConfigurable/registerStateRecordableStorage()`` — an app
 /// group, an encrypted store, or an in-memory double for tests.

@@ -14,7 +14,7 @@ import Foundation
 /// Holds a scene's pending ``SceneIntent`` set and drives them toward
 /// execution.
 ///
-/// The concrete implementation (`SceneIntentController` in the `Route` module)
+/// The concrete implementation shipped by RouteKit's engine
 /// tracks two disjoint queues: intents that matched the scene's registered set
 /// and are waiting to run, and a separate "unknown" set of inbound intents that
 /// arrived without a matching registration. As intents are handled they leave

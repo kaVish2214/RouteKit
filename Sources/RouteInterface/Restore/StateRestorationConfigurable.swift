@@ -23,7 +23,7 @@ import Foundation
 public protocol StateRestorationConfigurable: AnyObject {
 
     /// The storage backend records are persisted to. Return `nil` (the default)
-    /// to use RouteKit's built-in file-backed store (`StateRecordStorage`);
+    /// to use RouteKit's built-in file-backed store;
     /// return a custom ``StateRestorableStorage`` to persist elsewhere (an app
     /// group, an encrypted container, a test double).
     func registerStateRecordableStorage() -> (any StateRestorableStorage)?
@@ -39,7 +39,7 @@ public protocol StateRestorationConfigurable: AnyObject {
 extension StateRestorationConfigurable {
 
     /// Default: no custom storage — the handle falls back to RouteKit's
-    /// file-backed `StateRecordStorage`.
+    /// built-in file-backed store.
     public func registerStateRecordableStorage() -> (any StateRestorableStorage)? {
         return nil
     }

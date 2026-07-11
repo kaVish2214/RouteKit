@@ -21,7 +21,7 @@ import UIKit
 /// UIKit hands back when the system discards sessions (`didDiscardSceneSessions`),
 /// which may name scenes that aren't currently connected to any handle.
 ///
-/// `StateRestorationHandle` in the `Route` module is the default conformer.
+/// RouteKit's engine provides the default conformer.
 @MainActor
 public protocol StateRestorationHandleProtocol: RouteStateRestoration {
 

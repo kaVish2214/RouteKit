@@ -70,10 +70,9 @@ extension ViewControlling where Self: UIViewController {
     /// The route handle that owns this view controller's scene.
     ///
     /// Backed by a weak associated object (see the design note above), so it is
-    /// `nil` until the handle stamps itself on (via ``__sanitized(with:)`` when
-    /// the VC enters a ``SanitizedNavigationViewController``) and becomes `nil`
-    /// again if the handle deallocs. `private(set)` publicly — feature code
-    /// reads it; only RouteKit sets it.
+    /// `nil` until the handle stamps itself on (when the VC first enters a routed
+    /// navigation stack) and becomes `nil` again if the handle deallocs.
+    /// `private(set)` publicly — feature code reads it; only RouteKit sets it.
     private(set) public weak var routeHandle: (any RouteHandleProtocol)? {
         get {
             return withUnsafePointer(to: &AssociatedKeys.__viewControllerAssociatedRoutHandleKey) { t in
@@ -91,7 +90,7 @@ extension ViewControlling where Self: UIViewController {
     /// Stamps `routeHandle` onto the receiver **once**, the first time it enters
     /// a routed navigation stack.
     ///
-    /// Called by ``SanitizedNavigationViewController`` for every VC it hosts. The
+    /// Called by RouteKit's routed navigation controller for every VC it hosts. The
     /// `guard self.routeHandle == nil` makes it idempotent and, crucially,
     /// *non-overriding*: a VC that already carries a handle (e.g. it belongs to a
     /// different scene and was moved) keeps its original owner rather than being

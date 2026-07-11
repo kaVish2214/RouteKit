@@ -23,8 +23,7 @@ import UIKit
 ///
 /// Deliberately carries only these — the inbound `connectionOptions` (URLs,
 /// activities, shortcut) are handled separately by the intent pipeline, not by
-/// connection configuration. `SceneConnectionConfiguration` in the `Route`
-/// module is the default value box.
+/// connection configuration. RouteKit's engine provides the default value box.
 @MainActor
 public protocol SceneConnectionConfigurable: Hashable, Equatable {
 

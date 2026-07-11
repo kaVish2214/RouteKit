@@ -25,7 +25,7 @@ import UIKit
 /// screen, writing one when the scene backgrounds or navigates, and discarding
 /// one when the session ends. ``StateRestorationHandleProtocol`` is the
 /// app-level refinement (with an app-wide initializer and bulk cleanup);
-/// `StateRestorationHandle` in the `Route` module is the default conformer.
+/// RouteKit's engine provides the default conformer.
 ///
 /// `@MainActor` because it reads live UIKit state; `AnyObject` because a single
 /// instance is shared across the scenes of an app.
