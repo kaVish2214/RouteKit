@@ -1,5 +1,10 @@
 # RouteKit
 
+[![Swift](https://img.shields.io/badge/Swift-6.3-F05138?logo=swift&logoColor=white)](https://swift.org)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS%2014%2B%20%7C%20Mac%20Catalyst%2014%2B-007AFF?logo=apple&logoColor=white)](https://developer.apple.com)
+[![Swift Package Manager](https://img.shields.io/badge/SwiftPM-compatible-brightgreen?logo=swift&logoColor=white)](https://www.swift.org/package-manager/)
+[![License](https://img.shields.io/badge/License-BSL%201.1-4B4B4B)](LICENSE)
+
 A UIKit routing engine for scene-based iOS apps that own their own auth session.
 RouteKit pairs a host app's view controllers with an `AuthSessionHandle` and
 drives on-screen navigation as the session loads, transitions between signed-in
