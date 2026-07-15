@@ -10,7 +10,6 @@
 import Foundation
 import AuthSessionInterface
 import UIKit
-import DependencyResolver
 
 /// Supplies the view controllers the routing layer presents at each routing
 /// decision point.
@@ -36,12 +35,9 @@ import DependencyResolver
 ///
 /// `@MainActor` because every method is invoked from UIKit work on the main
 /// thread; `AnyObject` so the routing handle can retain a single conformer
-/// for the scene's lifetime; `DependencyResolver` so factory methods can
-/// resolve the view controllers they return through the shared dependency
-/// container (e.g. `self.resolved(SomeViewController.self)`) instead of
-/// baking construction into the router itself.
+/// for the scene's lifetime.
 @MainActor
-public protocol RouterProtocol: AnyObject, DependencyResolver {
+public protocol RouterProtocol: AnyObject {
 
     /// Whether the launch sequence should show a splash at all. Return `false`
     /// to skip straight to the initial view controller once the session is

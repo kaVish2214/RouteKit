@@ -8,7 +8,6 @@
 //
 
 import UIKit
-import DependencyResolver
 
 // MARK: - Design note
 //
@@ -107,5 +106,4 @@ extension ViewControlling where Self: UIViewController {
 /// Retroactively conforms *every* `UIViewController` to ``ViewControlling`` so
 /// the ``ViewControlling/routeHandle`` accessor is universally available —
 /// including on system controllers RouteKit didn't author.
-extension UIViewController: @retroactive DependencyResolver {}
 extension UIViewController: ViewControlling { }

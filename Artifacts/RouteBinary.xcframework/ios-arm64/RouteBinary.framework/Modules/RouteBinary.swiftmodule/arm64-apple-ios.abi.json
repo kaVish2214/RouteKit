@@ -1571,13 +1571,6 @@
       },
       {
         "kind": "Import",
-        "name": "DependencyResolver",
-        "printedName": "DependencyResolver",
-        "declKind": "Import",
-        "moduleName": "RouteBinary"
-      },
-      {
-        "kind": "Import",
         "name": "AuthSessionInterface",
         "printedName": "AuthSessionInterface",
         "declKind": "Import",
@@ -3759,21 +3752,21 @@
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1937,
+      "offset": 1911,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
       "kind": "Array",
-      "offset": 4547,
+      "offset": 4521,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Scene\/SceneManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 8344,
+      "offset": 8318,
       "length": 5,
       "value": "false"
     },

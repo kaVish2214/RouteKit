@@ -3,7 +3,7 @@
 .xcbuild/
 *.xcarchive
 
-# The xcframework IS committed (private repo, .binaryTarget(path:)); consumers get
-# it via git-clone. The distribution zip is only needed for remote/release hosting,
-# so it stays out of the repo.
+# The xcframework IS committed and resolved via .binaryTarget(path:); consumers
+# get it directly when SwiftPM clones the repo. The distribution zip is only
+# needed for remote/release-asset hosting, so it stays out of the repo.
 Artifacts/*.zip

@@ -9,7 +9,6 @@
 
 import Foundation
 import UIKit
-import DependencyResolver
 
 
 /// The host app's plug-in that teaches a ``SceneHandleProtocol`` about its
@@ -22,11 +21,9 @@ import DependencyResolver
 /// know that is *app-specific* is asked here, so the engine stays generic over
 /// the app's own scene vocabulary (`SceneObject`).
 ///
-/// Conforms to `DependencyResolver` so the factory methods can resolve the
-/// route handles and view controllers they vend through the shared container.
 /// `@MainActor` because every method runs on the UIKit scene-lifecycle path.
 @MainActor
-public protocol SceneConfiguratorProtocol: AnyObject, DependencyResolver, StateRestorationConfigurable {
+public protocol SceneConfiguratorProtocol: AnyObject, StateRestorationConfigurable {
 
     /// The app's scene-identity type — typically a `String`-backed enum. All
     /// scene-typed API on the handle and configurator is generic over this.

@@ -33,12 +33,14 @@ let package = Package(
         ),
 
         // `import Route` — re-exports the engine and links its dependencies.
+        // DependencyResolver is intentionally not listed here: it reaches the
+        // consumer transitively through RouteInterface, whose public API exposes
+        // it, which satisfies Route's references to it.
         .target(
             name: "Route",
             dependencies: [
                 "RouteBinary",
                 "RouteInterface",
-                .product(name: "DependencyResolver", package: "UtilityKit"),
                 .product(name: "SwiftConcurrency", package: "UtilityKit"),
                 .product(name: "AuthSessionInterface", package: "AuthSessionKit"),
             ],

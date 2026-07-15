@@ -8,8 +8,6 @@
 //
 
 import UIKit
-import DependencyResolver
-
 
 
 /// The base capability every routed view controller gets: a back-reference to
@@ -20,14 +18,13 @@ import DependencyResolver
 /// `UIViewController` conforms via the associated-object accessor in
 /// `UIViewController+RouteHandle.swift`, so any view controller can reach its
 /// handle; ``RoutingViewControlling`` refines this with the navigation
-/// affordances a *routed* screen declares. Conforms to `DependencyResolver` so
-/// the default `routeHandle` can be resolved from the shared container.
-public protocol ViewControlling: UIViewController, DependencyResolver, StateRestorable {
+/// affordances a *routed* screen declares.
+public protocol ViewControlling: UIViewController, StateRestorable {
 
     /// The routing handle that owns the receiver, used to push or pop other
-    /// view controllers from inside it. The default implementation resolves
-    /// the handle from the dependency container and returns `nil` if no
-    /// handle has been registered.
+    /// view controllers from inside it. Returns the handle stamped on the
+    /// receiver when it entered a routed navigation stack, or `nil` if none
+    /// has been registered.
     var routeHandle: (any RouteHandleProtocol)? { get }
 }
 

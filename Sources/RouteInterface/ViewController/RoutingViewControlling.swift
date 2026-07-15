@@ -8,7 +8,6 @@
 //
 
 import UIKit
-import DependencyResolver
 import AuthSessionInterface
 
 /// A view controller managed by the routing layer.

@@ -32,7 +32,7 @@ program against) ships as source. Usage is identical to a source package —
 Add RouteKit via SwiftPM:
 
 ```swift
-.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.4")
+.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.5")
 ```
 
 ```swift
@@ -201,9 +201,6 @@ The host's per-screen decision-maker:
 - `updateRouteIfNeeded(for:sessionEvent:)` — react to post-launch auth events.
 - `initialRouteDidInitialize(for:)` — post-launch hook.
 - `sceneIntentExecutionDidFailed(for:error:)` — a pending intent was denied.
-
-Conforms to `DependencyResolver` so factories can resolve their view controllers
-through the shared container.
 
 ### `RouteHandleProtocol`
 Drives one scene. Built by the configurator, retained via the scene's storage.
@@ -860,7 +857,7 @@ contributor, or a reviewer.
 
 | Package | Role |
 |---|---|
-| [`UtilityKit`](https://github.com/kaVish2214/UtilityKit) | `DependencyResolver` (Factory-backed container) inherited by the router / configurator / view controllers. |
+| [`UtilityKit`](https://github.com/kaVish2214/UtilityKit) | `DependencyResolver` (Factory-backed container) — the route handle conforms to it, so it can be resolved through the shared container from anywhere in the app. |
 | [`AuthSessionKit`](https://github.com/kaVish2214/AuthSessionKit) | The auth-session protocols and the `AuthSessionDelegateEvent` vocabulary RouteKit reacts to. |
 
 Transitively: `AuthSessionKit` pulls `BiometricAuthKit`; `UtilityKit` pulls `Factory`.
