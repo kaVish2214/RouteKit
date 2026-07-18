@@ -14,10 +14,9 @@ import AuthSessionInterface
 /// The persistence backend behind state restoration — a keyed store of
 /// ``StateRestorableRecord`` values, one per scene session.
 ///
-/// The restoration handle talks to this protocol, never to files directly, so
-/// the *where* and *how* of persistence is swappable: RouteKit's built-in
-/// store writes property-list files under
-/// Application Support, but a host can register its own conformer via
+/// The restoration layer talks only to this protocol, so the *where* and *how*
+/// of persistence is fully swappable: RouteKit provides a built-in store, but a
+/// host can register its own conformer via
 /// ``StateRestorationConfigurable/registerStateRecordableStorage()`` — an app
 /// group, an encrypted store, or an in-memory double for tests.
 ///
@@ -26,12 +25,11 @@ import AuthSessionInterface
 /// The store owns its own I/O. Mutating operations (`persist`, `remove*`) are
 /// **asynchronous** and report failures back on the **main actor** via their
 /// `errorHandler`; read operations (`restoreRecord`, `hasRecord`) are
-/// **synchronous** and must observe any still-pending write for the same key
-/// (the default backend funnels everything through one serial queue, so a read
-/// drains queued writes first — read-after-write stays consistent).
+/// **synchronous** and must observe any still-pending write for the same key,
+/// so read-after-write stays consistent.
 ///
-/// `Sendable` because the store is shared across the main actor and its own I/O
-/// executor; `AnyObject` for stable identity across a session's lifetime.
+/// `Sendable` because the store is shared across concurrency domains;
+/// `AnyObject` for stable identity across a session's lifetime.
 public protocol StateRestorableStorage: Sendable, AnyObject {
 
     /// Whether ``initializeStorage()`` has run successfully. Reads before

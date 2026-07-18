@@ -37,7 +37,7 @@ program against) ships as source. Usage is identical to a source package —
 Add RouteKit via SwiftPM:
 
 ```swift
-.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.5")
+.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.6")
 ```
 
 ```swift
@@ -255,8 +255,8 @@ chain.
 Restoration is **auth-gated** — a record captures the signed-in flag it was
 saved under and is ignored on an auth mismatch, so a signed-in screen never
 rehydrates into a signed-out app. Storage is swappable via
-`StateRestorationConfigurable.registerStateRecordableStorage()` (default: one
-property-list file per session under Application Support); forward
+`StateRestorationConfigurable.registerStateRecordableStorage()` (a built-in
+store is used by default); forward
 `application(_:didDiscardSceneSessions:)` to `discardSceneSessions(for:)` to
 clean up.
 
@@ -422,7 +422,7 @@ capability quietly disappears:
 > `didDiscardSceneSessions` is on **`UIApplicationDelegate`**, *not* the scene
 > delegate — it's easy to miss because everything else is scene-scoped. It is the
 > **only** hook that purges restoration state for windows the user swiped away in
-> the app switcher. Skip it and the on-disk store grows **unbounded** with orphaned
+> the app switcher. Skip it and the persisted store grows **unbounded** with orphaned
 > records that will never be read again.
 
 ### 2. Declare RouteKit's scene activity types in Info.plist

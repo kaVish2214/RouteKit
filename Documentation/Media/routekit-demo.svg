@@ -1,180 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470" role="img"
-     aria-label="RouteKit: multi-window scenes, deep links with cold-launch intent queueing, auth-aware state restoration, and auth-driven navigation.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" role="img"
+     aria-label="RouteKit: a routing engine for scene-based UIKit and SwiftUI apps. Deep links and intents queued at cold launch, multi-window scenes, auth-driven navigation, and auth-aware state restoration. Swift 6, iOS 14+ and Mac Catalyst.">
   <title>RouteKit — scene routing for UIKit &amp; SwiftUI</title>
 
-  <!-- ============================ defs ============================ -->
   <defs>
-    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0B1E3D"/>
-      <stop offset="1" stop-color="#06122A"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A1A34"/>
+      <stop offset="1" stop-color="#050F1D"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#0A84FF"/>
-      <stop offset="1" stop-color="#30D0C6"/>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B8CFF"/>
+      <stop offset="0.55" stop-color="#37E0C8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
     </linearGradient>
-    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    <radialGradient id="glow" cx="0.44" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#193668" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#050F1D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.40"/>
     </filter>
-    <clipPath id="screen"><rect x="352" y="96" width="196" height="286" rx="14"/></clipPath>
+    <clipPath id="screen"><rect x="366" y="132" width="168" height="256" rx="12"/></clipPath>
   </defs>
 
-  <!-- ============================ card ============================ -->
-  <rect x="1" y="1" width="898" height="468" rx="22" fill="url(#card)" stroke="#1E3A66" stroke-width="1.5"/>
+  <rect x="1" y="1" width="898" height="478" rx="24" fill="url(#bg)" stroke="#173157" stroke-width="1.5"/>
+  <ellipse cx="450" cy="250" rx="340" ry="230" fill="url(#glow)"/>
 
-  <!-- brand: compass mark + wordmark -->
-  <g transform="translate(34,34)">
-    <circle cx="14" cy="14" r="14" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
-    <polygon points="14,4 18,14 14,24 10,14" fill="#0A84FF"/>
-    <polygon points="14,4 14,14 10,14" fill="#30D0C6"/>
-    <text x="40" y="12" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" fill="#E8EEF7">RouteKit</text>
-    <text x="40" y="30" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#8FA3C0">Scene routing for UIKit &amp; SwiftUI</text>
+  <!-- brand -->
+  <g transform="translate(44,40)">
+    <circle cx="15" cy="15" r="15" fill="none" stroke="url(#brand)" stroke-width="2.6"/>
+    <polygon points="15,4 19.5,15 15,26 10.5,15" fill="#5B8CFF"/>
+    <polygon points="15,4 15,15 10.5,15" fill="#37E0C8"/>
+    <text x="46" y="13" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#EAF1FB">RouteKit</text>
+    <text x="46" y="33" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" fill="#8AA0C2">A routing engine for scene-based UIKit &amp; SwiftUI apps</text>
   </g>
 
-  <!-- ============================ device ============================ -->
-  <rect x="338" y="80" width="224" height="318" rx="30" fill="#0E244A" stroke="#24467D" stroke-width="2" filter="url(#soft)"/>
-  <rect x="352" y="96" width="196" height="286" rx="14" fill="#0A1B36"/>
-  <rect x="418" y="86" width="64" height="7" rx="3.5" fill="#24467D"/>
+  <!-- platform chips (top-right, right-aligned to x=856) -->
+  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" fill="#C3D2E8" text-anchor="middle">
+    <g transform="translate(636,40)"><rect width="62" height="24" rx="12" fill="#102647" stroke="#284d84"/><text x="31" y="16">Swift 6</text></g>
+    <g transform="translate(706,40)"><rect width="64" height="24" rx="12" fill="#102647" stroke="#284d84"/><text x="32" y="16">iOS 14+</text></g>
+    <g transform="translate(778,40)"><rect width="94" height="24" rx="12" fill="#102647" stroke="#284d84"/><text x="47" y="16">Mac Catalyst</text></g>
+  </g>
 
-  <!-- ===== screen content (clipped); one phase group visible at a time ===== -->
+  <!-- device -->
+  <rect x="350" y="116" width="200" height="288" rx="30" fill="#0C2247" stroke="#274d89" stroke-width="2" filter="url(#soft)"/>
+  <rect x="366" y="132" width="168" height="256" rx="12" fill="#071731"/>
+  <rect x="426" y="122" width="48" height="6" rx="3" fill="#274d89"/>
+
   <g clip-path="url(#screen)">
-    <rect x="352" y="96" width="196" height="286" fill="#0A1B36"/>
+    <rect x="366" y="132" width="168" height="256" fill="#071731"/>
+    <text x="382" y="152" font-family="-apple-system, Segoe UI, sans-serif" font-size="9.5" fill="#61789B">9:41</text>
 
-    <!-- ===== PHASE 1 : Multi-window (0-3s) ===== -->
+    <!-- PHASE 1 : Deep link routed (0 to 4s) -->
     <g opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
-               keyTimes="0;0.23;0.25;1" values="1;1;0;0"/>
-      <rect x="362" y="120" width="86" height="150" rx="10" fill="#12305C" stroke="#2E5aa0" stroke-width="1.5"/>
-      <rect x="362" y="120" width="86" height="26" rx="10" fill="#173a70"/>
-      <rect x="372" y="130" width="46" height="6" rx="3" fill="#8FB4EE"/>
-      <rect x="372" y="158" width="66" height="6" rx="3" fill="#33507e"/>
-      <rect x="372" y="174" width="54" height="6" rx="3" fill="#33507e"/>
-      <rect x="372" y="190" width="60" height="6" rx="3" fill="#33507e"/>
-      <rect x="452" y="140" width="86" height="150" rx="10" fill="#0f2a52" stroke="#30D0C6" stroke-width="1.5"/>
-      <rect x="452" y="140" width="86" height="26" rx="10" fill="#124a49"/>
-      <rect x="462" y="150" width="40" height="6" rx="3" fill="#7FE6DE"/>
-      <rect x="462" y="178" width="66" height="6" rx="3" fill="#2b5a58"/>
-      <rect x="462" y="194" width="52" height="6" rx="3" fill="#2b5a58"/>
+      <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.22;0.25;1" values="1;1;0;0"/>
+      <text x="384" y="184" font-family="-apple-system, Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#EAF1FB">Notes</text>
+      <rect x="384" y="200" width="132" height="34" rx="9" fill="#12305C"/>
+      <rect x="396" y="212" width="80" height="6" rx="3" fill="#9DBAF0"/>
+      <rect x="396" y="223" width="104" height="4" rx="2" fill="#33507e"/>
+      <rect x="384" y="242" width="132" height="34" rx="9" fill="#0f2a52"/>
+      <rect x="396" y="254" width="66" height="6" rx="3" fill="#7FE6DE"/>
+      <rect x="396" y="265" width="96" height="4" rx="2" fill="#2b5a58"/>
+      <g>
+        <animateTransform attributeName="transform" type="translate" dur="16s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.05;0.12;0.22;0.25;1"
+                          keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0 0 1 1"
+                          values="0,-70;0,-70;0,0;0,0;0,0;0,0"/>
+        <rect x="378" y="162" width="144" height="24" rx="12" fill="#5B8CFF"/>
+        <text x="450" y="178" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="10" fill="#F2F7FF">myapp://note/42</text>
+      </g>
+      <text x="450" y="360" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="10" fill="#8AA0C2">queued at cold launch, then routed</text>
     </g>
 
-    <!-- ===== PHASE 2 : Deep links + cold-launch queue (3-6s) ===== -->
+    <!-- PHASE 2 : Multi-window scenes (4 to 8s) -->
     <g opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
-               keyTimes="0;0.25;0.27;0.48;0.5;1" values="0;0;1;1;0;0"/>
-      <!-- destination screen -->
-      <rect x="372" y="150" width="156" height="200" rx="12" fill="#12305C" stroke="#2E5aa0" stroke-width="1.5"/>
-      <rect x="384" y="196" width="90" height="8" rx="4" fill="#8FB4EE"/>
-      <rect x="384" y="216" width="120" height="6" rx="3" fill="#33507e"/>
-      <rect x="384" y="230" width="104" height="6" rx="3" fill="#33507e"/>
-      <!-- deep-link chip drops in and docks -->
+      <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.25;0.27;0.47;0.5;1" values="0;0;1;1;0;0"/>
+      <rect x="384" y="176" width="64" height="150" rx="10" fill="#12305C" stroke="#2E5aa0" stroke-width="1.3"/>
+      <rect x="384" y="176" width="64" height="22" rx="10" fill="#173a70"/>
+      <rect x="394" y="185" width="40" height="5" rx="2.5" fill="#9DBAF0"/>
+      <rect x="394" y="210" width="46" height="4" rx="2" fill="#33507e"/>
+      <rect x="394" y="222" width="38" height="4" rx="2" fill="#33507e"/>
       <g>
-        <animateTransform attributeName="transform" type="translate" dur="12s" repeatCount="indefinite"
-                          keyTimes="0;0.27;0.31;0.42;0.5;1" values="0,-70;0,-70;0,0;0,0;0,0;0,0"/>
-        <rect x="366" y="112" width="168" height="26" rx="13" fill="#0A84FF"/>
-        <text x="450" y="129" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="11" fill="#EAF3FF">myapp://note/42</text>
+        <animateTransform attributeName="transform" type="translate" dur="16s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.29;0.36;0.47;0.5;1"
+                          keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0 0 1 1"
+                          values="70,20;70,20;0,0;0,0;0,0;0,0"/>
+        <rect x="452" y="176" width="64" height="150" rx="10" fill="#0f2a52" stroke="#37E0C8" stroke-width="1.3"/>
+        <rect x="452" y="176" width="64" height="22" rx="10" fill="#124a49"/>
+        <rect x="462" y="185" width="36" height="5" rx="2.5" fill="#7FE6DE"/>
+        <rect x="462" y="210" width="46" height="4" rx="2" fill="#2b5a58"/>
+        <rect x="462" y="222" width="34" height="4" rx="2" fill="#2b5a58"/>
       </g>
-      <!-- queued -> replayed tag -->
-      <g>
-        <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
-                 keyTimes="0;0.34;0.37;0.46;0.5;1" values="0;0;1;1;0;0"/>
-        <rect x="404" y="320" width="92" height="20" rx="10" fill="#0f2a52" stroke="#30D0C6" stroke-width="1.2"/>
-        <text x="450" y="334" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="10" fill="#7FE6DE">queued → replayed</text>
-      </g>
+      <text x="450" y="360" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="10" fill="#8AA0C2">a second window, its own route</text>
     </g>
 
-    <!-- ===== PHASE 3 : State restoration (6-9s) ===== -->
+    <!-- PHASE 3 : Auth-driven navigation (8 to 12s) -->
     <g opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
-               keyTimes="0;0.5;0.52;0.73;0.75;1" values="0;0;1;1;0;0"/>
-      <rect x="372" y="150" width="156" height="200" rx="12" fill="#12305C" stroke="#2E5aa0" stroke-width="1.5"/>
-      <!-- reload arc that spins, then a check appears -->
-      <g transform="translate(450,232)">
+      <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.72;0.75;1" values="0;0;1;1;0;0"/>
+      <!-- signed-in slides out to the left -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" dur="16s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.58;0.63;0.68;0.75;1"
+                          keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0 0 1 1"
+                          values="0,0;0,0;0,0;-180,0;-180,0;-180,0"/>
+        <rect x="384" y="184" width="132" height="132" rx="10" fill="#12305C"/>
+        <rect x="396" y="200" width="60" height="7" rx="3.5" fill="#9DBAF0"/>
+        <text x="396" y="258" font-family="-apple-system, Segoe UI, sans-serif" font-size="13" fill="#EAF1FB">Home</text>
+      </g>
+      <!-- sign-in slides in -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" dur="16s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.63;0.68;0.72;0.75;1"
+                          keySplines="0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0.4 0 0.2 1;0 0 1 1"
+                          values="180,0;180,0;180,0;0,0;0,0;0,0"/>
+        <rect x="384" y="184" width="132" height="132" rx="10" fill="#0f2a52" stroke="#37E0C8" stroke-width="1.3"/>
+        <g transform="translate(450,232)">
+          <rect x="-12" y="0" width="24" height="18" rx="4" fill="#37E0C8"/>
+          <path d="M -7 0 V -7 A 7 7 0 0 1 7 -7 V 0" fill="none" stroke="#37E0C8" stroke-width="2.4"/>
+        </g>
+        <text x="450" y="274" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="13" fill="#EAF1FB">Sign in</text>
+      </g>
+      <text x="450" y="360" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="10" fill="#8AA0C2">sign-out swaps the stack</text>
+    </g>
+
+    <!-- PHASE 4 : State restoration (12 to 16s) -->
+    <g opacity="0">
+      <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.75;0.77;0.99;1" values="0;0;1;1;0"/>
+      <rect x="384" y="176" width="132" height="150" rx="10" fill="#12305C" stroke="#2E5aa0" stroke-width="1.3"/>
+      <rect x="396" y="192" width="60" height="7" rx="3.5" fill="#9DBAF0"/>
+      <rect x="396" y="210" width="100" height="4" rx="2" fill="#33507e"/>
+      <g transform="translate(450,258)">
         <g>
-          <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
-                   keyTimes="0;0.52;0.63;0.66;1" values="0;1;1;0;0"/>
-          <path d="M -16 0 A 16 16 0 1 1 -4 15" fill="none" stroke="#30D0C6" stroke-width="3.5" stroke-linecap="round"/>
-          <polygon points="-4,20 6,14 -8,8" fill="#30D0C6"/>
-          <animateTransform attributeName="transform" type="rotate" dur="1.2s" repeatCount="indefinite" values="0;360"/>
+          <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.78;0.86;0.88;1" values="0;1;1;0;0"/>
+          <path d="M -14 0 A 14 14 0 1 1 -3 13" fill="none" stroke="#37E0C8" stroke-width="3" stroke-linecap="round"/>
+          <animateTransform attributeName="transform" type="rotate" dur="1.1s" repeatCount="indefinite" values="0;360"/>
         </g>
         <g>
-          <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
-                   keyTimes="0;0.66;0.68;0.73;0.75;1" values="0;0;1;1;0;0"/>
-          <circle r="18" fill="none" stroke="#30D0C6" stroke-width="3"/>
-          <polyline points="-8,1 -2,8 10,-7" fill="none" stroke="#30D0C6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <animate attributeName="opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.88;0.9;0.99;1" values="0;0;1;1;0"/>
+          <circle r="16" fill="none" stroke="#37E0C8" stroke-width="2.6"/>
+          <polyline points="-7,1 -1,7 8,-6" fill="none" stroke="#37E0C8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         </g>
       </g>
-      <text x="450" y="300" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="11" fill="#8FB4EE">restored — same screen, same scroll</text>
-    </g>
-
-    <!-- ===== PHASE 4 : Auth-driven navigation (9-12s) ===== -->
-    <g opacity="0">
-      <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
-               keyTimes="0;0.75;0.77;0.98;1" values="0;0;1;1;0"/>
-      <!-- signed-in stack slides out -->
-      <g>
-        <animateTransform attributeName="transform" type="translate" dur="12s" repeatCount="indefinite"
-                          keyTimes="0;0.77;0.82;0.86;1" values="0,0;0,0;0,0;-200,0;-200,0"/>
-        <rect x="372" y="150" width="156" height="200" rx="12" fill="#12305C" stroke="#2E5aa0" stroke-width="1.5"/>
-        <rect x="384" y="168" width="70" height="8" rx="4" fill="#8FB4EE"/>
-        <text x="392" y="250" font-family="-apple-system, Segoe UI, sans-serif" font-size="13" fill="#E8EEF7">Home</text>
-      </g>
-      <!-- signed-out screen slides in with a lock -->
-      <g>
-        <animateTransform attributeName="transform" type="translate" dur="12s" repeatCount="indefinite"
-                          keyTimes="0;0.82;0.86;0.9;1" values="200,0;200,0;200,0;0,0;0,0"/>
-        <rect x="372" y="150" width="156" height="200" rx="12" fill="#0f2a52" stroke="#30D0C6" stroke-width="1.5"/>
-        <g transform="translate(450,224)">
-          <rect x="-13" y="-2" width="26" height="20" rx="4" fill="#30D0C6"/>
-          <path d="M -8 -2 V -9 A 8 8 0 0 1 8 -9 V -2" fill="none" stroke="#30D0C6" stroke-width="3"/>
-        </g>
-        <text x="450" y="268" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="13" fill="#E8EEF7">Sign in</text>
-      </g>
+      <text x="450" y="360" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="10" fill="#8AA0C2">restored, auth-aware</text>
     </g>
   </g>
 
-  <!-- ============================ feature legend ============================ -->
+  <!-- feature legend (right) -->
   <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
-    <!-- row template: dot + label; active dot brightens/enlarges in its window -->
-    <g transform="translate(600,150)">
-      <circle cx="0" cy="0" r="5" fill="#0A84FF">
-        <animate attributeName="r" dur="12s" repeatCount="indefinite" keyTimes="0;0.23;0.25;1" values="7;7;5;5"/>
-        <animate attributeName="fill-opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.23;0.25;1" values="1;1;0.4;0.4"/>
-      </circle>
-      <text x="18" y="5" font-size="15" font-weight="600" fill="#E8EEF7">Multi-window scenes</text>
-      <text x="18" y="24" font-size="12" fill="#8FA3C0">one handle per window, one manager per app</text>
+    <g transform="translate(600,158)">
+      <circle r="5" fill="#5B8CFF"><animate attributeName="r" dur="16s" repeatCount="indefinite" keyTimes="0;0.22;0.25;1" values="7;7;5;5"/><animate attributeName="fill-opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.22;0.25;1" values="1;1;0.3;0.3"/></circle>
+      <text x="20" y="5" font-size="15.5" font-weight="600" fill="#EAF1FB">Deep links &amp; intents</text>
+      <text x="20" y="24" font-size="11.5" fill="#8AA0C2">queued at cold launch, replayed when live</text>
     </g>
-    <g transform="translate(600,205)">
-      <circle cx="0" cy="0" r="5" fill="#0A84FF">
-        <animate attributeName="r" dur="12s" repeatCount="indefinite" keyTimes="0;0.25;0.27;0.48;0.5;1" values="5;5;7;7;5;5"/>
-        <animate attributeName="fill-opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.25;0.27;0.48;0.5;1" values="0.4;0.4;1;1;0.4;0.4"/>
-      </circle>
-      <text x="18" y="5" font-size="15" font-weight="600" fill="#E8EEF7">Deep links &amp; intents</text>
-      <text x="18" y="24" font-size="12" fill="#8FA3C0">queued at cold launch, replayed when ready</text>
+    <g transform="translate(600,214)">
+      <circle r="5" fill="#5B8CFF"><animate attributeName="r" dur="16s" repeatCount="indefinite" keyTimes="0;0.25;0.27;0.47;0.5;1" values="5;5;7;7;5;5"/><animate attributeName="fill-opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.25;0.27;0.47;0.5;1" values="0.3;0.3;1;1;0.3;0.3"/></circle>
+      <text x="20" y="5" font-size="15.5" font-weight="600" fill="#EAF1FB">Multi-window scenes</text>
+      <text x="20" y="24" font-size="11.5" fill="#8AA0C2">one handle per window, one manager per app</text>
     </g>
-    <g transform="translate(600,260)">
-      <circle cx="0" cy="0" r="5" fill="#30D0C6">
-        <animate attributeName="r" dur="12s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.73;0.75;1" values="5;5;7;7;5;5"/>
-        <animate attributeName="fill-opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.73;0.75;1" values="0.4;0.4;1;1;0.4;0.4"/>
-      </circle>
-      <text x="18" y="5" font-size="15" font-weight="600" fill="#E8EEF7">State restoration</text>
-      <text x="18" y="24" font-size="12" fill="#8FA3C0">auth-aware — never rehydrates the wrong state</text>
+    <g transform="translate(600,270)">
+      <circle r="5" fill="#37E0C8"><animate attributeName="r" dur="16s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.72;0.75;1" values="5;5;7;7;5;5"/><animate attributeName="fill-opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.5;0.52;0.72;0.75;1" values="0.3;0.3;1;1;0.3;0.3"/></circle>
+      <text x="20" y="5" font-size="15.5" font-weight="600" fill="#EAF1FB">Auth-driven navigation</text>
+      <text x="20" y="24" font-size="11.5" fill="#8AA0C2">sign-in / out swaps the stack automatically</text>
     </g>
-    <g transform="translate(600,315)">
-      <circle cx="0" cy="0" r="5" fill="#30D0C6">
-        <animate attributeName="r" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.77;0.98;1" values="5;5;7;7;5"/>
-        <animate attributeName="fill-opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.75;0.77;0.98;1" values="0.4;0.4;1;1;0.4"/>
-      </circle>
-      <text x="18" y="5" font-size="15" font-weight="600" fill="#E8EEF7">Auth-driven navigation</text>
-      <text x="18" y="24" font-size="12" fill="#8FA3C0">sign-in / sign-out swaps the stack for you</text>
+    <g transform="translate(600,326)">
+      <circle r="5" fill="#37E0C8"><animate attributeName="r" dur="16s" repeatCount="indefinite" keyTimes="0;0.75;0.77;0.99;1" values="5;5;7;7;5"/><animate attributeName="fill-opacity" dur="16s" repeatCount="indefinite" keyTimes="0;0.75;0.77;0.99;1" values="0.3;0.3;1;1;0.3"/></circle>
+      <text x="20" y="5" font-size="15.5" font-weight="600" fill="#EAF1FB">State restoration</text>
+      <text x="20" y="24" font-size="11.5" fill="#8AA0C2">auth-aware — never rehydrates the wrong state</text>
     </g>
   </g>
 
-  <!-- ============================ caption + progress ============================ -->
-  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#8FA3C0" text-anchor="middle">
-    <text x="450" y="428"><tspan opacity="0"><animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.02;0.23;0.25;1" values="1;1;1;0;0"/>You describe what each scene is — RouteKit decides where &amp; when.</tspan></text>
+  <!-- ships-as -->
+  <g font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#8AA0C2" text-anchor="middle">
+    <g transform="translate(600,404)"><rect width="128" height="20" rx="10" fill="#102647" stroke="#284d84"/><text x="64" y="14" fill="#B9C8DF">RouteInterface · source</text></g>
+    <g transform="translate(738,404)"><rect width="118" height="20" rx="10" fill="#102647" stroke="#284d84"/><text x="59" y="14" fill="#B9C8DF">Route · xcframework</text></g>
   </g>
-  <rect x="34" y="446" width="832" height="4" rx="2" fill="#173055"/>
-  <rect x="34" y="446" width="832" height="4" rx="2" fill="url(#accent)">
-    <animate attributeName="width" dur="12s" repeatCount="indefinite" values="0;832"/>
+
+  <!-- progress -->
+  <rect x="44" y="446" width="812" height="4" rx="2" fill="#12294c"/>
+  <rect x="44" y="446" width="812" height="4" rx="2" fill="url(#brand)">
+    <animate attributeName="width" dur="16s" repeatCount="indefinite" values="0;812"/>
   </rect>
 </svg>

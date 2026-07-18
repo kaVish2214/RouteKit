@@ -3289,43 +3289,120 @@
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 5653,
+      "length": 90,
+      "value": "\"Unable to persist \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 5727,
+      "length": 2,
+      "value": "\" at the moment.\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 6672,
+      "length": 65,
+      "value": "\"Unable to read record for type : \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 6735,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "BooleanLiteral",
-      "offset": 7175,
+      "offset": 7280,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "Array",
-      "offset": 8551,
+      "offset": 8656,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 9108,
+      "offset": 8929,
+      "length": 133,
+      "value": "\"Unable to remove record for persistentIdentifier -> \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 9056,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 9060,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 9321,
       "length": 5,
       "value": "\" | \""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "Array",
-      "offset": 9908,
+      "offset": 10121,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 10272,
+      "offset": 10273,
+      "length": 140,
+      "value": "\"Unable to remove all records while persistentIdentifier -> \""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 10407,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 10411,
+      "length": 1,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 10600,
       "length": 5,
       "value": "\" | \""
     },
     {
       "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
       "kind": "StringLiteral",
-      "offset": 11420,
+      "offset": 10784,
+      "length": 45,
+      "value": "\"Unable to remove all records at the moment.\""
+    },
+    {
+      "filePath": "\/Users\/kavi\/Desktop\/SDKs\/Packages\/Xc\/RouteKit\/.xcbuild\/RouteBinaryBuild\/Sources\/RouteBinary\/Restore\/StateRecordStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 11768,
       "length": 6,
       "value": "\"data\""
     },

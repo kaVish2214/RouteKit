@@ -10,18 +10,21 @@
 import Foundation
 
 
-/// Failures surfaced by the state-restoration pipeline — raised by the storage
-/// backend and the restoration handle, and delivered to the host through
-/// ``StateRestorationConfigurable/restorationStorageExecution(for:didFailedWith:)``.
+/// Failures surfaced by the state-restoration pipeline, delivered to the host
+/// through ``StateRestorationConfigurable/restorationStorageExecution(for:didFailedWith:)``.
 ///
-/// Most cases wrap the underlying error's description as a `reason` string
-/// rather than the error itself, so the enum stays `Sendable` across the
-/// storage backend's I/O executor and the main actor.
+/// Where a case carries a `reason`, it is a short, human-readable summary meant
+/// for logging. The enum is `Sendable` so it can be delivered safely across
+/// concurrency domains.
 public enum StateRestorationError: Error, Sendable {
 
     /// An operation was attempted before ``StateRestorableStorage/initializeStorage()``
     /// succeeded.
     case storageNotInitialized
+
+    /// The storage backend failed to come up during
+    /// ``StateRestorableStorage/initializeStorage()``.
+    case storageInitializationFailed
 
     /// A record's ``StateRestorableRecord/stateData`` could not be encoded for
     /// writing.
@@ -33,7 +36,7 @@ public enum StateRestorationError: Error, Sendable {
     /// The stored record could not be read back from the backing store.
     case readFailed(reason: String)
 
-    /// A record was read but could not be decoded (the on-disk shape no longer
+    /// A record was read but could not be decoded (the stored shape no longer
     /// matches the type — e.g. after an incompatible ``StateRepresentable``
     /// change).
     case decodingFailed(reason: String)
@@ -43,7 +46,7 @@ public enum StateRestorationError: Error, Sendable {
     case removalFailed(reason: String)
 
     /// **Advisory warning, not a hard failure.** A record's encoded size crossed
-    /// the store's `payloadWarningLimit`; the record is *still written*. Treat it
+    /// the store's configured size limit; the record is *still written*. Treat it
     /// as a signal that the snapshot should be slimmed down (see the design note
     /// on ``StateRepresentable``).
     case payloadTooLarge(identifier: String, bytes: Int, limit: Int)
@@ -60,16 +63,18 @@ extension StateRestorationError : LocalizedError {
         switch self {
         case .storageNotInitialized:
             return "Storage not initialized"
+        case .storageInitializationFailed:
+            return "Failed to initialize storage."
         case .encodingFailed(let reason):
-            return "Failed to encode state: Reason -> \(reason)"
+            return "Failed to encode state (underlying: \(reason))"
         case .writeFailed(let reason):
-            return "Failed to write state: Reason -> \(reason))"
+            return "Failed to write state (underlying: \(reason))"
         case .readFailed(let reason):
-            return "Failed to read state: Reason -> \(reason))"
+            return "Failed to read state (underlying: \(reason))"
         case .decodingFailed(let reason):
-            return "Failed to decode state: Reason -> \(reason))"
+            return "Failed to decode state (underlying: \(reason))"
         case .removalFailed(let reason):
-            return "Failed to remove state: Reason -> \(reason))"
+            return "Failed to remove state (underlying: \(reason))"
         case .payloadTooLarge(let identifier, let bytes, let limit):
             return "Payload too large for \(identifier). Current size: \(bytes), limit: \(limit)"
         case .targetNotFound(let identifier):

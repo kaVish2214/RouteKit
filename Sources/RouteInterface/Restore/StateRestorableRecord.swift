@@ -10,7 +10,7 @@
 import Foundation
 
 
-/// The on-disk unit of state restoration: one persisted record standing in for
+/// The persisted unit of state restoration: one record standing in for
 /// one restorable screen.
 ///
 /// A record is the flattened, `Codable` pairing of *which* screen was saved
