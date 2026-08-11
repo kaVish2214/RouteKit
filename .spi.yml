@@ -1,0 +1,17 @@
+version: 1
+builder:
+  configs:
+    # RouteKit ships a precompiled xcframework (RouteBinary) that only contains
+    # iOS and Mac Catalyst slices, and Package.swift declares only .iOS / .macCatalyst.
+    # Restrict Swift Package Index's build matrix to iOS so the compatibility
+    # results reflect what the package actually supports instead of failing on
+    # macOS / tvOS / watchOS / visionOS / Linux where no binary slice exists.
+    # Swift version is intentionally omitted so SPI builds against every toolchain.
+    #
+    # documentation_targets lists the source targets SPI hosts DocC docs for.
+    # Only RouteInterface is included: it is the public contract (protocols,
+    # enums, value types) and is a source target. The Route target is a binary
+    # (xcframework) shim, so SPI cannot extract a symbol graph from it.
+    - platform: ios
+      documentation_targets:
+        - RouteInterface

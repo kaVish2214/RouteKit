@@ -4,6 +4,8 @@
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%2014%2B%20%7C%20Mac%20Catalyst%2014%2B-007AFF?logo=apple&logoColor=white)](https://developer.apple.com)
 [![Swift Package Manager](https://img.shields.io/badge/SwiftPM-compatible-brightgreen?logo=swift&logoColor=white)](https://www.swift.org/package-manager/)
 [![License](https://img.shields.io/badge/License-BSL%201.1-4B4B4B)](LICENSE)
+[![Swift Package Index](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FkaVish2214%2FRouteKit%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/kaVish2214/RouteKit)
+[![Platforms](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FkaVish2214%2FRouteKit%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/kaVish2214/RouteKit)
 
 <p align="center">
   <img src="Documentation/Media/routekit-demo.svg" width="820"
