@@ -1,7 +1,7 @@
 # RouteKit
 
 [![Swift](https://img.shields.io/badge/Swift-6.3-F05138?logo=swift&logoColor=white)](https://swift.org)
-[![Platforms](https://img.shields.io/badge/Platforms-iOS%2014%2B%20%7C%20Mac%20Catalyst%2014%2B-007AFF?logo=apple&logoColor=white)](https://developer.apple.com)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS%2015%2B%20%7C%20Mac%20Catalyst%2015%2B-007AFF?logo=apple&logoColor=white)](https://developer.apple.com)
 [![Swift Package Manager](https://img.shields.io/badge/SwiftPM-compatible-brightgreen?logo=swift&logoColor=white)](https://www.swift.org/package-manager/)
 [![License](https://img.shields.io/badge/License-BSL%201.1-4B4B4B)](LICENSE)
 [![Swift Package Index](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FkaVish2214%2FRouteKit%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/kaVish2214/RouteKit)
@@ -94,38 +94,53 @@ transitively.
 ## Architecture
 
 ```
-                        ┌───────────────────────┐
-                        │     AuthSessionKit    │
-                        └───────────┬───────────┘
-                                    │ auth session callbacks
-                                    ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│                         SceneManager (per app)                       │
-│  • caches configurator's registered scenes + intents                 │
-│  • builds one RouteHandle per connected UIWindowScene                │
-│  • activates / closes scenes; routes inbound intents                 │
-└───────────────┬──────────────────────────────────────┬───────────────┘
-                │ asks                                   │ builds
-                ▼                                        ▼
-   ┌────────────────────────┐              ┌──────────────────────────┐
-   │ SceneConfiguratorProto │              │   RouteHandle (per scene)│
-   │ (host: names scenes,   │              │  • primary + overlay     │
-   │  intents, builds handle)│             │    windows               │
-   └────────────────────────┘              │  • splash / obscuration  │
-                                           │  • pending-intent queue  │
-                                           └────────────┬─────────────┘
-                                                        │ asks at each decision
-                                                        ▼
-                                            ┌──────────────────────┐
-                                            │    RouterProtocol    │
-                                            │   (host-app impl)    │
-                                            └──────────────────────┘
+Host-supplied inputs
+  • SceneConfiguratorProtocol  → passed to SceneManager(sceneConfigurator:)
+  • AuthSessionHandle, RouterProtocol → passed to RouteHandle(...), which the
+    host constructs inside the configurator's routeHandle(for:with:within:)
+
+┌──────────────────────────────────────────────────────────────────┐
+│ SceneManager  ·  one per app                                     │
+│                                                                  │
+│ • snapshots the configurator's scenes, intents + window behavior │
+│ • per connecting UIWindowScene: sorts its inbound intents, asks  │
+│   the configurator for that scene's RouteHandle, and keeps it    │
+│ • activates / closes scenes; routes inbound intents              │
+│ • drives state restoration (store / restore per scene)           │
+│ • on sign-out, closes scenes whose termination policy allows it  │
+└──────────────────────────────────────────────────────────────────┘
+                                 │
+                                 │ asks the configurator to build, then owns
+                                 ▼
+┌──────────────────────────────────────────────────────────────────┐
+│ RouteHandle  ·  one per UIWindowScene                            │
+│                                                                  │
+│ • primary window + navigation stack                              │
+│ • overlay window: splash at launch, content obscuration later    │
+│ • pending-intent queue, replayed after sign-in                   │
+│ • holds the host-injected authSessionHandle                      │
+└──────────────────────────────────────────────────────────────────┘
+                                 │
+                                 │ asks at each decision + forwards each auth event
+                                 ▼
+┌──────────────────────────────────────────────────────────────────┐
+│ RouterProtocol  ·  host-app implementation                       │
+│                                                                  │
+│ • per-screen routing decisions                                   │
+│ • reacts to auth via updateRouteIfNeeded()                       │
+└──────────────────────────────────────────────────────────────────┘
+
+Auth events (AuthSessionKit) reach two listeners:
+  • each RouteHandle — the first loaded session starts the launch route;
+                       after launch, each event is forwarded to the router
+  • SceneManager     — sign-out only → scene teardown
 ```
 
 One **`SceneManager`** per app owns every scene; one **`RouteHandle`** per
-`UIWindowScene` owns that scene's windows and navigation. The host supplies two
-plug-ins: a **`SceneConfiguratorProtocol`** (names scenes and intents, builds
-route handles) and a **`RouterProtocol`** (per-screen decisions).
+`UIWindowScene` owns that scene's windows and navigation. The host supplies a
+**`SceneConfiguratorProtocol`** (names scenes and intents, builds route handles),
+a **`RouterProtocol`** (per-screen decisions), and the **auth session handle**
+each route handle is built with.
 
 ---
 
@@ -170,7 +185,7 @@ route handles) and a **`RouterProtocol`** (per-screen decisions).
 
 | Case | Source | Identity (how it matches) |
 |---|---|---|
-| `.url(URL?)` | a deep-link URL | the full URL string |
+| `.url(URL?)` | a deep-link URL | the full URL string — an **exact** match (path and query included) |
 | `.userActivity(activityType:context:)` | Handoff / Spotlight / Siri | `activityType` **only** (the `context` payload is excluded) |
 | `.shortcutItem(type:)` | a Home Screen quick action | the shortcut `type` |
 
@@ -178,6 +193,12 @@ The configurator declares the accepted set via `registerIntents`; an inbound
 value matching none is rejected with `SceneRoutingError.unregisteredIntent`.
 Matching is by **identity** — payload-independent — so a statically registered
 intent still matches an inbound one carrying a runtime `context`.
+
+> **URL intents match exactly.** A registered `.url(URL(string: "notes://notes"))`
+> matches only `notes://notes` — not `notes://notes/123` or `notes://notes?id=123`. Register
+> fixed URLs only. For links that carry a value (an ID, a query), route through
+> `.userActivity` and pass the value in its `context`: the payload is excluded from
+> identity, so one registered activity type matches every inbound value.
 
 `SceneRoutingBehavior` (from `routingBehavior(for:within:)`) decides *where* a
 registered intent lands:
@@ -344,7 +365,7 @@ final class AppSceneConfigurator: SceneConfiguratorProtocol {
                     router: AppRouter())
     }
 
-    func sceneTerminationPolicy(for scene: AppScene, with terminationRequest: any SceneTerminationRequest,
+    func sceneTerminationPolicy(for uiScene: UIScene, with terminationRequest: any SceneTerminationRequest,
                                 within sceneHandle: any SceneHandleProtocol) -> any SceneTerminationPolicy {
         AppTerminationPolicy()  // your SceneTerminationPolicy conformer
     }
@@ -589,8 +610,8 @@ final class NotesRouter: RouterProtocol {
         guard r.authSessionHandle.sessionStatus.isSignedIn else {
             return .executionDenied            // keep it queued; retried after sign-in
         }
-        if let note = vc as? NoteDetailViewController, case .url(let url) = intent,
-           url?.lastPathComponent == note.noteID {
+        if let note = vc as? NoteDetailViewController, case .userActivity(_, let ctx) = intent,
+           (ctx?.decode()?["noteID"] as? String) == note.noteID {
             return .intentExecuted             // already on that note — nothing to push
         }
         return .executeIntent(isAnimated: true)
@@ -598,7 +619,7 @@ final class NotesRouter: RouterProtocol {
 
     func preferredViewController(_ intent: SceneIntent, for r: any RouteHandleProtocol) -> any RoutingViewControlling {
         switch intent {
-        case .url(let url):                 return NoteDetailViewController(noteID: url?.lastPathComponent ?? "")
+        case .url:                          return NotesListViewController()   // fixed URL → fixed screen
         case .userActivity(_, let ctx):     return NoteDetailViewController(noteID: (ctx?.decode()?["noteID"] as? String) ?? "")
         case .shortcutItem:                 return ComposeViewController()
         }
@@ -651,7 +672,7 @@ final class NotesSceneConfigurator: SceneConfiguratorProtocol {
     func registerScenes() -> Set<NotesScene> { [.main, .compose] }
 
     func registerIntents() -> Set<SceneIntent> {
-        [ .url(URL(string: "notes://note")),                                   // notes://note/<id>
+        [ .url(URL(string: "notes://notes")),                                  // exact match: fixed URLs only
           .userActivity(activityType: "com.notes.viewing", context: nil),      // Handoff
           .shortcutItem(type: "new-note") ]                                    // quick action
     }
@@ -787,8 +808,8 @@ control, with the delegate wiring that makes it all fire.
 
 ## Support & commercial use
 
-RouteKit is **free for personal use, indie developers, and small teams** — use it
-and ship it, no strings attached.
+RouteKit is **free for everyone, including production use without limitation** —
+use it and ship it, no strings attached (see [License](#license)).
 
 If RouteKit saves you time, you can support its development:
 
@@ -873,14 +894,42 @@ Transitively: `AuthSessionKit` pulls `BiometricAuthKit`; `UtilityKit` pulls `Fac
 
 ## Requirements
 
-- Swift toolchain 6.3, built with `swiftLanguageModes: [.v6]` (strict
-  concurrency on).
-- **Platforms:** iOS 14+ (iPhone **and** iPad — universal UIKit) and Mac
-  Catalyst 14.0+. RouteKit is scene-based, so multi-window behaviour lights up
+- **Xcode with Swift 6.3 or later** (any newer Xcode works). The package uses
+  `swiftLanguageModes: [.v6]` (strict concurrency on).
+- **Platforms:** iOS 15+ (iPhone **and** iPad — universal UIKit) and Mac
+  Catalyst 15.0+. RouteKit is scene-based, so multi-window behaviour lights up
   automatically wherever the host declares `UIApplicationSupportsMultipleScenes`
   (iPad and Mac); single-window hosts degrade gracefully to current-window
   routing.
 - UIKit (`UIWindow`, `UINavigationController`, `UIVisualEffectView`).
+
+---
+
+## Security
+
+From 0.1.7, the precompiled `RouteBinary.xcframework` carries a
+[code signature](https://developer.apple.com/documentation/xcode/verifying-the-origin-of-your-xcframeworks).
+It is self-signed under the name **"RouteKit"**, with this SHA-256 certificate
+fingerprint:
+
+```
+45:F3:46:F7:6E:55:FA:6F:46:D7:E6:C6:91:18:3B:AC:B6:8F:05:2F:3D:E2:BD:B4:42:7A:BC:AA:75:9E:5B:B6
+```
+
+Every release is signed with this same certificate. Xcode verifies the signature
+on every build and refuses a binary that was modified after signing. Xcode does not
+record *who* signed a Swift package's binary, though, and the certificate name alone
+proves nothing — so to confirm the signer, compare the fingerprint. Run this against
+the `RouteBinary.xcframework` in RouteKit's package checkout:
+
+```bash
+cd "$(mktemp -d)" &&
+codesign -d --extract-certificates /path/to/RouteKit/Artifacts/RouteBinary.xcframework &&
+openssl x509 -inform der -in codesign0 -noout -fingerprint -sha256
+```
+
+The output must match the fingerprint above. Also confirm that your
+`Package.swift` / `Package.resolved` point at `https://github.com/kaVish2214/RouteKit`.
 
 ---
 

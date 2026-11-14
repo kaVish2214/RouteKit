@@ -4,16 +4,17 @@ import PackageDescription
 let package = Package(
     name: "RouteKit",
     platforms: [
-        .iOS(.v14),
-        .macCatalyst(.v14),
+        .iOS(.v15),
+        .macCatalyst(.v15),
     ],
     products: [
         .library(name: "RouteInterface", targets: ["RouteInterface"]),
         .library(name: "Route", targets: ["Route"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kaVish2214/UtilityKit", .upToNextMajor(from: "0.1.0")),
-        .package(url: "https://github.com/kaVish2214/AuthSessionKit", .upToNextMajor(from: "0.1.0")),
+        // Pinned to the minor line the precompiled engine was built against.
+        .package(url: "https://github.com/kaVish2214/UtilityKit", .upToNextMinor(from: "0.1.1")),
+        .package(url: "https://github.com/kaVish2214/AuthSessionKit", .upToNextMinor(from: "0.1.1")),
     ],
     targets: [
         // The public contract: protocols, enums and value types you program against.
