@@ -45,6 +45,23 @@ and this project aims to follow [Semantic Versioning](https://semver.org/spec/v2
   query included). The Notes example no longer registers `notes://note` while
   expecting `notes://note/<id>` to match; parameterised links are documented to go
   through `.userActivity` with the value in its `context`. No behavior change.
+- README code examples now compile as written under Swift 6: the quick start adds the
+  missing `import UIKit` and `restorationStorageExecution(for:didFailedWith:)`, the scene
+  delegate calls `try` on `scene(_:willConnectTo:options:errorHandler:)` (it throws, e.g.
+  for a refused duplicate window), the app delegate uses the shared manager, and the
+  walkthrough uses the protocols' own parameter names. `route(to:)` references now read
+  `route(to:completion:)`.
+- README walkthrough: the Notes example registers a fixed deep link to one note
+  (`notes://notes/groceries`) and routes it to that note's detail screen.
+  `canPushViewController` now suppresses pushing only the *same* note twice in a row (it
+  previously blocked any note detail over another, contradicting its comment).
+  Its `sceneTerminationPolicy` now decides per window via `handle.scene(for:)`: sign-out
+  closes the compose window only, and the main window stays and swaps to Sign in
+  (previously every window allowed auth-session termination).
+- New README overview animation: the Notes walkthrough on iPhone Duo and iPad — cold-launch
+  Handoff queueing, sign-in replay, a deep link into the open window, a SwiftUI compose
+  window, content obscuring, per-scene restoration, and sign-out by termination policy.
+- README header: the RouteKit icon, centred above the title and badges.
 
 ## [0.1.6] - 2026-07-18
 

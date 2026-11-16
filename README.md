@@ -1,4 +1,13 @@
-# RouteKit
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Documentation/Media/Icons/routekit-icon-sky-safari-needle-dark.svg">
+    <img src="Documentation/Media/Icons/routekit-icon-sky-safari-needle.svg" width="200" alt="RouteKit icon">
+  </picture>
+</p>
+
+<h1 align="center">RouteKit</h1>
+
+<p align="center">
 
 [![Swift](https://img.shields.io/badge/Swift-6.3-F05138?logo=swift&logoColor=white)](https://swift.org)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS%2015%2B%20%7C%20Mac%20Catalyst%2015%2B-007AFF?logo=apple&logoColor=white)](https://developer.apple.com)
@@ -7,9 +16,11 @@
 [![Swift Package Index](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FkaVish2214%2FRouteKit%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/kaVish2214/RouteKit)
 [![Platforms](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FkaVish2214%2FRouteKit%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/kaVish2214/RouteKit)
 
+</p>
+
 <p align="center">
   <img src="Documentation/Media/routekit-demo.svg" width="820"
-       alt="RouteKit at a glance: multi-window scenes, deep links with cold-launch intent queueing, auth-aware state restoration, and auth-driven navigation.">
+       alt="RouteKit walkthrough with the Notes app on iPhone Duo and iPad: a Handoff queued during the splash, replayed after sign-in, a deep link routed into the open window, a SwiftUI compose window, content obscuring, per-scene state restoration, and sign-out closing protected windows by policy.">
 </p>
 
 A UIKit routing engine for scene-based iOS apps that own their own auth session.
@@ -39,7 +50,7 @@ program against) ships as source. Usage is identical to a source package —
 Add RouteKit via SwiftPM:
 
 ```swift
-.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.6")
+.package(url: "https://github.com/kaVish2214/RouteKit.git", from: "0.1.7")
 ```
 
 ```swift
@@ -238,7 +249,7 @@ for intents, `requestStoreState()` / `requestDiscardState()` for restoration, an
 `authSessionHandle` / `isRouteInitialized` / `currentViewController` for
 diagnostics. `RouteHandle` is the default conformer.
 
-> **Completion semantics.** The `completion` on `route(to:)` and the inbound
+> **Completion semantics.** The `completion` on `route(to:completion:)` and the inbound
 > forwarders is a **per-intent error/denial channel** — invoked only when an
 > intent can't be honoured, never on success, and once per failing intent in a
 > fan-out. It is not a once-only completion.
@@ -309,6 +320,7 @@ clean up.
 ## Quick start
 
 ```swift
+import UIKit
 import Route
 import RouteInterface
 import AuthSessionInterface
@@ -369,6 +381,10 @@ final class AppSceneConfigurator: SceneConfiguratorProtocol {
                                 within sceneHandle: any SceneHandleProtocol) -> any SceneTerminationPolicy {
         AppTerminationPolicy()  // your SceneTerminationPolicy conformer
     }
+
+    func restorationStorageExecution(for restorable: (any StateRestoring)?, didFailedWith error: any Error) {
+        // Observe restoration failures — log or surface as you see fit.
+    }
 }
 
 // 4. Composition root — one SceneManager per app, forwarded to from each scene delegate.
@@ -380,8 +396,13 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
-        sceneManager.scene(windowScene, willConnectTo: session, options: connectionOptions) { error in
-            debugPrint("routing error:", error)
+        do {
+            try sceneManager.scene(windowScene, willConnectTo: session, options: connectionOptions) { error in
+                debugPrint("routing error:", error)
+            }
+        } catch {
+            // e.g. SceneRoutingError.sceneAlreadyActive — a duplicate window was refused.
+            debugPrint("scene connection refused:", error)
         }
     }
 
@@ -403,7 +424,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 // State restoration cleanup — forward from the *app* delegate:
 extension AppDelegate {
     func application(_ application: UIApplication, didDiscardSceneSessions sessions: Set<UISceneSession>) {
-        sceneManager.discardSceneSessions(for: sessions)
+        AppDependencies.sceneManager.discardSceneSessions(for: sessions)
     }
 }
 ```
@@ -580,72 +601,79 @@ import AuthSessionInterface
 @MainActor
 final class NotesRouter: RouterProtocol {
 
+    /// A fixed deep link to one note (URL intents match exactly — see above).
+    static let groceriesLink = URL(string: "notes://notes/groceries")
+
     // Expand the initial screen's preceding chain (list under detail) at launch.
     var allowsPrecedingStackOnInitialRoute: Bool { true }
 
     // — Launch —
 
-    func preferredSplashViewController(for r: any RouteHandleProtocol) -> any RoutingSplashControlling {
+    func preferredSplashViewController(for routeHandling: any RouteHandleProtocol) -> any RoutingSplashControlling {
         NotesSplashViewController()
     }
 
-    func preferredInitialViewController(for r: any RouteHandleProtocol,
+    func preferredInitialViewController(for routeHandling: any RouteHandleProtocol,
                                         with restoring: (any StateRestoring)?) -> any RoutingViewControlling {
         // Resume a restored note if one survived the last session…
         if let note = restoring as? NoteDetailViewController { return note }
         // …otherwise branch on auth state.
-        return r.authSessionHandle.sessionStatus.isSignedIn
+        return routeHandling.authSessionHandle.sessionStatus.isSignedIn
             ? NotesListViewController()
             : SignInViewController()
     }
 
-    func initialRouteDidInitialize(for r: any RouteHandleProtocol) {
+    func initialRouteDidInitialize(for routeHandling: any RouteHandleProtocol) {
         // Live route now exists — safe to kick off analytics, prefetch, etc.
     }
 
     // — Intents —
 
-    func shouldExecute(pending intent: SceneIntent, current vc: UIViewController?,
-                       for r: any RouteHandleProtocol) -> SceneIntentExecutionPermission {
-        guard r.authSessionHandle.sessionStatus.isSignedIn else {
+    func shouldExecute(pending sceneIntent: SceneIntent, current viewController: UIViewController?,
+                       for routeHandling: any RouteHandleProtocol) -> SceneIntentExecutionPermission {
+        guard routeHandling.authSessionHandle.sessionStatus.isSignedIn else {
             return .executionDenied            // keep it queued; retried after sign-in
         }
-        if let note = vc as? NoteDetailViewController, case .userActivity(_, let ctx) = intent,
+        if let note = viewController as? NoteDetailViewController, case .userActivity(_, let ctx) = sceneIntent,
            (ctx?.decode()?["noteID"] as? String) == note.noteID {
             return .intentExecuted             // already on that note — nothing to push
         }
         return .executeIntent(isAnimated: true)
     }
 
-    func preferredViewController(_ intent: SceneIntent, for r: any RouteHandleProtocol) -> any RoutingViewControlling {
-        switch intent {
+    func preferredViewController(_ sceneIntent: SceneIntent, for routeHandling: any RouteHandleProtocol) -> any RoutingViewControlling {
+        switch sceneIntent {
+        case .url(let url) where url == Self.groceriesLink:
+                                            return NoteDetailViewController(noteID: "groceries")
         case .url:                          return NotesListViewController()   // fixed URL → fixed screen
         case .userActivity(_, let ctx):     return NoteDetailViewController(noteID: (ctx?.decode()?["noteID"] as? String) ?? "")
         case .shortcutItem:                 return ComposeViewController()
         }
     }
 
-    func sceneIntentExecutionDidFailed(for r: any RouteHandleProtocol, error: any Error) {
+    func sceneIntentExecutionDidFailed(for routeHandling: any RouteHandleProtocol, error: any Error) {
         // A pending intent was denied (e.g. still signed out) — log / surface.
     }
 
     // — Guards & reactions —
 
-    func canPushViewController(on r: any RouteHandleProtocol,
-                               from source: UIViewController?,
-                               to destination: any RoutingViewControlling) -> Bool {
-        // Suppress pushing the same note twice in a row.
-        !(source is NoteDetailViewController && destination is NoteDetailViewController)
+    func canPushViewController(on routeHandling: any RouteHandleProtocol,
+                               from sourceViewController: UIViewController?,
+                               to destinationViewController: any RoutingViewControlling) -> Bool {
+        // Suppress pushing the same note twice in a row; a different note pushes normally.
+        guard let from = sourceViewController as? NoteDetailViewController,
+              let to = destinationViewController as? NoteDetailViewController else { return true }
+        return from.noteID != to.noteID
     }
 
-    func updateRouteIfNeeded(for r: any RouteHandleProtocol, sessionEvent: AuthSessionDelegateEvent) {
+    func updateRouteIfNeeded(for routeHandling: any RouteHandleProtocol, sessionEvent: AuthSessionDelegateEvent) {
         // Hard-cut to the signed-out root the moment the session drops.
-        if case .logout = sessionEvent { r.push(to: SignInViewController(), animated: true) }
+        if case .logout = sessionEvent { routeHandling.push(to: SignInViewController(), animated: true) }
     }
 
     // — Content obscuration — (defaults already gate on signed-in + no manual reauth;
     //   override only to customise the cover.)
-    func preferredContentObscurationViewController(for r: any RouteHandleProtocol) -> UIViewController {
+    func preferredContentObscurationViewController(for routeHandling: any RouteHandleProtocol) -> UIViewController {
         BrandBlurViewController()
     }
 }
@@ -673,6 +701,7 @@ final class NotesSceneConfigurator: SceneConfiguratorProtocol {
 
     func registerIntents() -> Set<SceneIntent> {
         [ .url(URL(string: "notes://notes")),                                  // exact match: fixed URLs only
+          .url(NotesRouter.groceriesLink),                                     // a fixed link to one note
           .userActivity(activityType: "com.notes.viewing", context: nil),      // Handoff
           .shortcutItem(type: "new-note") ]                                    // quick action
     }
@@ -711,11 +740,14 @@ final class NotesSceneConfigurator: SceneConfiguratorProtocol {
 
     // — Termination —
 
+    /// Asked per window. On sign-out only the compose window closes; the main
+    /// window stays open and its route handle swaps it to Sign in.
     func sceneTerminationPolicy(for uiScene: UIScene, with request: any SceneTerminationRequest,
                                 within handle: any SceneHandleProtocol) -> any SceneTerminationPolicy {
-        NotesTerminationPolicy(
-            isSystemTerminationAllowed: true,                       // user may close any window
-            isAuthSessionTerminationAllowed: request.isAuthSessionTermination  // sign-out closes protected windows
+        let scene = handle.scene(for: uiScene) as? NotesScene
+        return NotesTerminationPolicy(
+            isSystemTerminationAllowed: true,                 // user may close any window
+            isAuthSessionTerminationAllowed: scene == .compose // sign-out closes compose only
         )
     }
 
@@ -739,8 +771,12 @@ final class NotesSceneConfigurator: SceneConfiguratorProtocol {
 ### 6. Composition root — wire the delegates (all of them)
 
 ```swift
+import UIKit
+import Route
+import RouteInterface
+
 // One manager for the whole app (store it in your DI container / AppDelegate).
-let notesSceneManager = SceneManager(sceneConfigurator: NotesSceneConfigurator())
+@MainActor let notesSceneManager = SceneManager(sceneConfigurator: NotesSceneConfigurator())
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     private var manager: SceneManager<NotesSceneConfigurator> { AppDependencies.sceneManager }
@@ -748,7 +784,8 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
                options opts: UIScene.ConnectionOptions) {
         guard let windowScene = scene as? UIWindowScene else { return }
-        manager.scene(windowScene, willConnectTo: session, options: opts) { print("route error:", $0) }
+        do { try manager.scene(windowScene, willConnectTo: session, options: opts) { print("route error:", $0) } }
+        catch { print("connection refused:", error) }   // e.g. a duplicate window
     }
     func scene(_ scene: UIScene, openURLContexts ctxs: Set<UIOpenURLContext>) {
         manager.scene(scene, openURLContexts: ctxs) { print($0) }
