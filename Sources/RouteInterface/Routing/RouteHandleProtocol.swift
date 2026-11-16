@@ -177,25 +177,41 @@ extension RouteHandleProtocol {
         self.push(to: viewController, animated: animated)
     }
     
-    /// Default-argument convenience over the `RoutingViewControlling` push
-    /// requirement so call sites can omit `animated:` (defaults to `true`).
+    // The conveniences below deliberately use signatures that DIFFER from the
+    // requirements they forward to. An extension method whose signature matches
+    // a requirement becomes that requirement's default witness, so a conformer
+    // that forgot to implement it would compile and then recurse forever.
+    // With distinct signatures, a missing implementation is a compile error.
+
+    /// Convenience over the `RoutingViewControlling` push requirement for call
+    /// sites that omit `animated:` (pushes animated).
     @discardableResult
-    public func push(to viewController: any RoutingViewControlling, animated: Bool = true) -> Bool {
-        return self.push(to: viewController, animated: animated)
+    public func push(to viewController: any RoutingViewControlling) -> Bool {
+        return self.push(to: viewController, animated: true)
     }
 
-    /// Default-argument convenience over the plain-`UIViewController` push
-    /// requirement so call sites can omit `animated:` (defaults to `true`).
+    /// Convenience over the plain-`UIViewController` push requirement for call
+    /// sites that omit `animated:` (pushes animated).
     @discardableResult
-    func push(to viewController: UIViewController, animated: Bool = true) -> Bool {
-        return self.push(to: viewController, animated: animated)
+    func push(to viewController: UIViewController) -> Bool {
+        return self.push(to: viewController, animated: true)
     }
 
     /// Default-argument convenience over
-    /// ``present(_:with:animated:completion:)``: presents from the top-most
-    /// controller (``PresentationSource/currentController``), animated, with no
-    /// completion unless supplied.
-    public func present(_ viewController: UIViewController, with presentationSource: any PresentationSourceProtocol = PresentationSource.currentController, animated flag: Bool = true, completion: (() -> Void)? = nil) {
+    /// ``present(_:with:animated:completion:)`` without a completion: presents
+    /// from the top-most controller (``PresentationSource/currentController``),
+    /// animated, unless specified otherwise.
+    public func present(_ viewController: UIViewController, with presentationSource: any PresentationSourceProtocol = PresentationSource.currentController, animated flag: Bool = true) {
+        self.present(viewController, with: presentationSource, animated: flag, completion: nil)
+    }
+
+    /// Default-argument convenience over
+    /// ``present(_:with:animated:completion:)`` with a completion (e.g. a
+    /// trailing closure). The completion is non-optional here so this overload
+    /// is not a witness for the requirement; it is forwarded as an optional,
+    /// which can only resolve to the requirement.
+    public func present(_ viewController: UIViewController, with presentationSource: any PresentationSourceProtocol = PresentationSource.currentController, animated flag: Bool = true, completion: @escaping () -> Void) {
+        let completion: (() -> Void)? = completion
         self.present(viewController, with: presentationSource, animated: flag, completion: completion)
     }
     

@@ -7,3 +7,9 @@
 # get it directly when SwiftPM clones the repo. The distribution zip is only
 # needed for remote/release-asset hosting, so it stays out of the repo.
 Artifacts/*.zip
+
+# Signing material must never be committed (RouteKit self-signed identity).
+*.p12
+*.pfx
+*.key
+*.certSigningRequest

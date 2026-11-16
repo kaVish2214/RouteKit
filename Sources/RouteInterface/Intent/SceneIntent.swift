@@ -27,7 +27,10 @@ import UIKit
 /// one carrying a runtime `context`.
 public enum SceneIntent: Hashable, Sendable, Codable {
 
-    /// Matches a deep-link `URL` by its full string form.
+    /// Matches a deep-link `URL` by its full string form — an exact match, path
+    /// and query included, so register fixed URLs only. For links carrying a
+    /// value (e.g. an ID), use ``userActivity(activityType:context:)`` and pass
+    /// the value in its `context`, which is excluded from identity.
     case url(URL?)
 
     /// Matches an `NSUserActivity` by its `activityType`.
